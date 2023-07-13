@@ -6,8 +6,8 @@ let MT = document.querySelector(".MainText");
 window.onload = () => {
     let VBG = document.getElementById("VBG");
     let SRC = document.createElement("source");
-    // SRC.setAttribute("src", "vids/Windranger.mp4");
-    SRC.setAttribute("src", "vids/Juggernaut.mp4");
+    SRC.setAttribute("src", "vids/Windranger.mp4");
+    // SRC.setAttribute("src", "vids/Juggernaut.mp4");
     SRC.setAttribute("type", "video/mp4");
     VBG.append(SRC);
 }
