@@ -6,8 +6,8 @@ let MT = document.querySelector(".MainText");
 window.onload = () => {
     let VBG = document.getElementById("VBG");
     let SRC = document.createElement("source");
-    SRC.setAttribute("src", "vids/Windranger.mp4");
-    // SRC.setAttribute("src", "vids/Juggernaut.mp4");
+    // SRC.setAttribute("src", "vids/Windranger.mp4");
+    SRC.setAttribute("src", "vids/Juggernaut.mp4");
     SRC.setAttribute("type", "video/mp4");
     VBG.append(SRC);
 }
@@ -29,6 +29,11 @@ Showbt.onclick = () => {
     Hidebt.classList.add("cl");
     line.classList.add("cl");
     MT.classList.add("cl");
+    Person1.classList.add("cl1");
+    Person2.classList.add("cl1");
+    Person3.classList.add("cl1");
+    Person4.classList.add("cl1");
+    Person5.classList.add("cl1");
 }
 
 Hidebt.onclick = () => {
@@ -37,6 +42,11 @@ Hidebt.onclick = () => {
     Hidebt.classList.remove("cl");
     line.classList.remove("cl");
     MT.classList.remove("cl");
+    Person1.classList.remove("cl1");
+    Person2.classList.remove("cl1");
+    Person3.classList.remove("cl1");
+    Person4.classList.remove("cl1");
+    Person5.classList.remove("cl1");
 }
 
 
@@ -146,8 +156,6 @@ INB1.addEventListener("click", () => {
     AccountDetails4.classList.add("cl");
     AccountDetails5.classList.add("cl");
     INFB1.classList.add("cl");
-    Showbt.classList.add("cl");
-    Hidebt.classList.remove("cl");
     setTimeout(() => {
         INF1.classList.add("cl");
         INF1.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
@@ -183,8 +191,6 @@ Person2.addEventListener("click", () => {
     AccountDetails4.classList.add("cl");
     AccountDetails5.classList.add("cl");
     INFB2.classList.add("cl");
-    Showbt.classList.add("cl");
-    Hidebt.classList.remove("cl");
     setTimeout(() => {
         INF2.classList.add("cl");
         INF2.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
@@ -212,8 +218,6 @@ INB2.addEventListener("click", () => {
     AccountDetails4.classList.add("cl");
     AccountDetails5.classList.add("cl");
     INFB2.classList.add("cl");
-    Showbt.classList.add("cl");
-    Hidebt.classList.remove("cl");
     setTimeout(() => {
         INF2.classList.add("cl");
         INF2.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
@@ -250,8 +254,6 @@ Person3.addEventListener("click", () => {
     AccountDetails4.classList.add("cl");
     AccountDetails5.classList.add("cl");
     INFB3.classList.add("cl");
-    Showbt.classList.add("cl");
-    Hidebt.classList.remove("cl");
     setTimeout(() => {
         INF3.classList.add("cl");
         INF3.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
@@ -279,8 +281,6 @@ INB3.addEventListener("click", () => {
     AccountDetails4.classList.add("cl");
     AccountDetails5.classList.add("cl");
     INFB3.classList.add("cl");
-    Showbt.classList.add("cl");
-    Hidebt.classList.remove("cl");
     setTimeout(() => {
         INF3.classList.add("cl");
         INF3.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
@@ -317,8 +317,6 @@ Person4.addEventListener("click", () => {
     AccountDetails4.classList.add("cl");
     AccountDetails5.classList.add("cl");
     INFB4.classList.add("cl");
-    Showbt.classList.add("cl");
-    Hidebt.classList.remove("cl");
     setTimeout(() => {
         INF4.classList.add("cl");
         INF4.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
@@ -346,8 +344,6 @@ INB4.addEventListener("click", () => {
     AccountDetails4.classList.add("cl");
     AccountDetails5.classList.add("cl");
     INFB4.classList.add("cl");
-    Showbt.classList.add("cl");
-    Hidebt.classList.remove("cl");
     setTimeout(() => {
         INF4.classList.add("cl");
         INF4.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
@@ -384,8 +380,6 @@ Person5.addEventListener("click", () => {
     AccountDetails4.classList.add("cl");
     AccountDetails5.classList.add("cl");
     INFB5.classList.add("cl");
-    Showbt.classList.add("cl");
-    Hidebt.classList.remove("cl");
     setTimeout(() => {
         INF5.classList.add("cl");
         INF5.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
@@ -413,8 +407,6 @@ INB5.addEventListener("click", () => {
     AccountDetails4.classList.add("cl");
     AccountDetails5.classList.add("cl");
     INFB5.classList.add("cl");
-    Showbt.classList.add("cl");
-    Hidebt.classList.remove("cl");
     setTimeout(() => {
         INF5.classList.add("cl");
         INF5.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
