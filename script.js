@@ -1,3 +1,6 @@
+let Hint = document.getElementById("Hint");
+let HintMT = document.getElementById("HintMT");
+
 let MT = document.querySelector(".MainText");
 
 window.onload = () => {
@@ -150,7 +153,6 @@ INB1.addEventListener("click", () => {
         INF1.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
     }, 500)
 })
-
 Person2.addEventListener("mouseover", () => {
     Person2.classList.add("cl");
     PBG2.classList.add("cl");
@@ -440,7 +442,7 @@ if (DotaInfo === true) {
     let Hours = 2130+525;
     let InGameDate = "20.10.2021";
     let MMR = 1280;
-    let WinStreak = 14;
+    let WinStreak = 20;
     let WinRate = Wins/Matches*100;
     let BattleCups = 0;
 
@@ -449,7 +451,15 @@ if (DotaInfo === true) {
     Loses1.innerHTML = Loses;
     Hours1.innerHTML = Hours;
     InGameDate1.innerHTML = InGameDate;
-    MMR1.innerHTML = MMR;
+    let RankIMG1 = document.getElementById("RankIMG1");
+    RankIMG1.addEventListener("mouseover", () => {
+        Hint.classList.add("cl");
+        HintMT.innerHTML = MMR;
+    })
+    RankIMG1.addEventListener("mouseout", () => {
+        Hint.classList.remove("cl");
+        HintMT.innerHTML = MMR;
+    })
     WinStreak1.innerHTML = WinStreak;
     WinRate1.innerHTML = WinRate.toFixed(2) + "%";
     BattleCups1.innerHTML = BattleCups;
@@ -483,7 +493,15 @@ if (DotaInfo === true) {
     Loses2.innerHTML = Loses;
     Hours2.innerHTML = Hours;
     InGameDate2.innerHTML = InGameDate;
-    MMR2.innerHTML = MMR;
+    let RankIMG2 = document.getElementById("RankIMG2");
+    RankIMG2.addEventListener("mouseover", () => {
+        Hint.classList.add("cl");
+        HintMT.innerHTML = MMR;
+    })
+    RankIMG2.addEventListener("mouseout", () => {
+        Hint.classList.remove("cl");
+        HintMT.innerHTML = MMR;
+    })
     WinStreak2.innerHTML = WinStreak;
     WinRate2.innerHTML = WinRate.toFixed(2) + "%";
     BattleCups2.innerHTML = BattleCups;
@@ -502,13 +520,13 @@ let WinRate3 = document.getElementById("WinRate3");
 let BattleCups3 = document.getElementById("BattleCups3");
 
 if (DotaInfo === true) {
-    let Matches = "";
-    let Wins = "";
+    let Matches = 767;
+    let Wins = 354;
     let Loses = Matches-Wins;
-    let Hours = "";
-    let InGameDate = "";
-    let MMR = "";
-    let WinStreak = "";
+    let Hours = 890;
+    let InGameDate = "10.12.2021";
+    let MMR = "On calibration";
+    let WinStreak = 6;
     let WinRate = Wins/Matches*100;
     let BattleCups = 0;
 
@@ -517,7 +535,15 @@ if (DotaInfo === true) {
     Loses3.innerHTML = Loses;
     Hours3.innerHTML = Hours;
     InGameDate3.innerHTML = InGameDate;
-    MMR3.innerHTML = MMR;
+    let RankIMG3 = document.getElementById("RankIMG3");
+    RankIMG3.addEventListener("mouseover", () => {
+        Hint.classList.add("cl");
+        HintMT.innerHTML = MMR;
+    })
+    RankIMG3.addEventListener("mouseout", () => {
+        Hint.classList.remove("cl");
+        HintMT.innerHTML = MMR;
+    })
     WinStreak3.innerHTML = WinStreak;
     WinRate3.innerHTML = WinRate.toFixed(2) + "%";
     BattleCups3.innerHTML = BattleCups;
@@ -551,7 +577,15 @@ if (DotaInfo === true) {
     Loses4.innerHTML = Loses;
     Hours4.innerHTML = Hours;
     InGameDate4.innerHTML = InGameDate;
-    MMR4.innerHTML = MMR;
+    let RankIMG4 = document.getElementById("RankIMG4");
+    RankIMG4.addEventListener("mouseover", () => {
+        Hint.classList.add("cl");
+        HintMT.innerHTML = MMR;
+    })
+    RankIMG4.addEventListener("mouseout", () => {
+        Hint.classList.remove("cl");
+        HintMT.innerHTML = MMR;
+    })
     WinStreak4.innerHTML = WinStreak;
     WinRate4.innerHTML = WinRate.toFixed(2) + "%";
     BattleCups4.innerHTML = BattleCups;
@@ -570,23 +604,371 @@ let WinRate5 = document.getElementById("WinRate5");
 let BattleCups5 = document.getElementById("BattleCups5");
 
 if (DotaInfo === true) {
-    let Matches = "";
-    let Wins = "";
+    let Matches = 174;
+    let Wins = 73;
     let Loses = Matches-Wins;
-    let Hours = "";
-    let InGameDate = "";
-    let MMR = "";
-    let WinStreak = "";
+    let Hours = 260;
+    let InGameDate = "23.10.2022";
+    let MMR = "On calibration";
+    let WinStreak = 5;
     let WinRate = Wins/Matches*100;
-    let BattleCups = "";
+    let BattleCups = 0;
 
     Matches5.innerHTML = Matches;
     Wins5.innerHTML = Wins;
     Loses5.innerHTML = Loses;
     Hours5.innerHTML = Hours;
     InGameDate5.innerHTML = InGameDate;
-    MMR5.innerHTML = MMR;
+    let RankIMG5 = document.getElementById("RankIMG5");
+    RankIMG5.addEventListener("mouseover", () => {
+        Hint.classList.add("cl");
+        HintMT.innerHTML = MMR;
+    })
+    RankIMG5.addEventListener("mouseout", () => {
+        Hint.classList.remove("cl");
+        HintMT.innerHTML = MMR;
+    })
     WinStreak5.innerHTML = WinStreak;
     WinRate5.innerHTML = WinRate.toFixed(2) + "%";
     BattleCups5.innerHTML = BattleCups;
 }
+
+
+
+let UpdateDateNum = "13.07.2023";
+
+let UpdateDateBt1 = document.querySelector(".UpdateDateBt1");
+let UpdateDate1 = document.querySelector(".UpdateDate1");
+    UpdateDate1.innerHTML = "Last update <br>" + UpdateDateNum;
+
+UpdateDateBt1.onclick = () => {
+    UpdateDate1.classList.toggle("cl");
+}
+
+let UpdateDateBt2 = document.querySelector(".UpdateDateBt2");
+let UpdateDate2 = document.querySelector(".UpdateDate2");
+    UpdateDate2.innerHTML = "Last update <br>" + UpdateDateNum;
+
+UpdateDateBt2.onclick = () => {
+    UpdateDate2.classList.toggle("cl");
+}
+
+let UpdateDateBt3 = document.querySelector(".UpdateDateBt3");
+let UpdateDate3 = document.querySelector(".UpdateDate3");
+    UpdateDate3.innerHTML = "Last update <br>" + UpdateDateNum;
+
+UpdateDateBt3.onclick = () => {
+    UpdateDate3.classList.toggle("cl");
+}
+
+let UpdateDateBt4 = document.querySelector(".UpdateDateBt4");
+let UpdateDate4 = document.querySelector(".UpdateDate4");
+    UpdateDate4.innerHTML = "Last update <br>" + UpdateDateNum;
+
+UpdateDateBt4.onclick = () => {
+    UpdateDate4.classList.toggle("cl");
+}
+
+let UpdateDateBt5 = document.querySelector(".UpdateDateBt5");
+let UpdateDate5 = document.querySelector(".UpdateDate5");
+    UpdateDate5.innerHTML = "Last update <br>" + UpdateDateNum;
+
+UpdateDateBt5.onclick = () => {
+    UpdateDate5.classList.toggle("cl");
+}
+
+let closebt1 = document.getElementById("closebt1");
+closebt1.onclick = () => {
+    INFB1.classList.remove("cl");
+    INF1.classList.remove("cl");
+    STA1.classList.remove("cl");
+    STA2.classList.remove("cl");
+    STA3.classList.remove("cl");
+    STA4.classList.remove("cl");
+    STA5.classList.remove("cl");
+    INB1.classList.remove("cl");
+    INB2.classList.remove("cl");
+    INB3.classList.remove("cl");
+    INB4.classList.remove("cl");
+    INB5.classList.remove("cl");
+    SteamAccount1.classList.remove("cl");
+    SteamAccount2.classList.remove("cl");
+    SteamAccount3.classList.remove("cl");
+    SteamAccount4.classList.remove("cl");
+    SteamAccount5.classList.remove("cl");
+    AccountDetails1.classList.remove("cl");
+    AccountDetails2.classList.remove("cl");
+    AccountDetails3.classList.remove("cl");
+    AccountDetails4.classList.remove("cl");
+    AccountDetails5.classList.remove("cl");
+    setTimeout(() => {
+        Hidebt.classList.add("cl");
+    }, 200)
+}
+let closebt2 = document.getElementById("closebt2");
+closebt2.onclick = () => {
+    INFB2.classList.remove("cl");
+    INF2.classList.remove("cl");
+    STA1.classList.remove("cl");
+    STA2.classList.remove("cl");
+    STA3.classList.remove("cl");
+    STA4.classList.remove("cl");
+    STA5.classList.remove("cl");
+    INB1.classList.remove("cl");
+    INB2.classList.remove("cl");
+    INB3.classList.remove("cl");
+    INB4.classList.remove("cl");
+    INB5.classList.remove("cl");
+    SteamAccount1.classList.remove("cl");
+    SteamAccount2.classList.remove("cl");
+    SteamAccount3.classList.remove("cl");
+    SteamAccount4.classList.remove("cl");
+    SteamAccount5.classList.remove("cl");
+    AccountDetails1.classList.remove("cl");
+    AccountDetails2.classList.remove("cl");
+    AccountDetails3.classList.remove("cl");
+    AccountDetails4.classList.remove("cl");
+    AccountDetails5.classList.remove("cl");
+    setTimeout(() => {
+        Hidebt.classList.add("cl");
+    }, 200)
+}
+let closebt3 = document.getElementById("closebt3");
+closebt3.onclick = () => {
+    INFB3.classList.remove("cl");
+    INF3.classList.remove("cl");
+    STA1.classList.remove("cl");
+    STA2.classList.remove("cl");
+    STA3.classList.remove("cl");
+    STA4.classList.remove("cl");
+    STA5.classList.remove("cl");
+    INB1.classList.remove("cl");
+    INB2.classList.remove("cl");
+    INB3.classList.remove("cl");
+    INB4.classList.remove("cl");
+    INB5.classList.remove("cl");
+    SteamAccount1.classList.remove("cl");
+    SteamAccount2.classList.remove("cl");
+    SteamAccount3.classList.remove("cl");
+    SteamAccount4.classList.remove("cl");
+    SteamAccount5.classList.remove("cl");
+    AccountDetails1.classList.remove("cl");
+    AccountDetails2.classList.remove("cl");
+    AccountDetails3.classList.remove("cl");
+    AccountDetails4.classList.remove("cl");
+    AccountDetails5.classList.remove("cl");
+    setTimeout(() => {
+        Hidebt.classList.add("cl");
+    }, 200)
+}
+let closebt4 = document.getElementById("closebt4");
+closebt4.onclick = () => {
+    INFB4.classList.remove("cl");
+    INF4.classList.remove("cl");
+    STA1.classList.remove("cl");
+    STA2.classList.remove("cl");
+    STA3.classList.remove("cl");
+    STA4.classList.remove("cl");
+    STA5.classList.remove("cl");
+    INB1.classList.remove("cl");
+    INB2.classList.remove("cl");
+    INB3.classList.remove("cl");
+    INB4.classList.remove("cl");
+    INB5.classList.remove("cl");
+    SteamAccount1.classList.remove("cl");
+    SteamAccount2.classList.remove("cl");
+    SteamAccount3.classList.remove("cl");
+    SteamAccount4.classList.remove("cl");
+    SteamAccount5.classList.remove("cl");
+    AccountDetails1.classList.remove("cl");
+    AccountDetails2.classList.remove("cl");
+    AccountDetails3.classList.remove("cl");
+    AccountDetails4.classList.remove("cl");
+    AccountDetails5.classList.remove("cl");
+    setTimeout(() => {
+        Hidebt.classList.add("cl");
+    }, 200)
+}
+let closebt5 = document.getElementById("closebt5");
+closebt5.onclick = () => {
+    INFB5.classList.remove("cl");
+    INF5.classList.remove("cl");
+    STA1.classList.remove("cl");
+    STA2.classList.remove("cl");
+    STA3.classList.remove("cl");
+    STA4.classList.remove("cl");
+    STA5.classList.remove("cl");
+    INB1.classList.remove("cl");
+    INB2.classList.remove("cl");
+    INB3.classList.remove("cl");
+    INB4.classList.remove("cl");
+    INB5.classList.remove("cl");
+    SteamAccount1.classList.remove("cl");
+    SteamAccount2.classList.remove("cl");
+    SteamAccount3.classList.remove("cl");
+    SteamAccount4.classList.remove("cl");
+    SteamAccount5.classList.remove("cl");
+    AccountDetails1.classList.remove("cl");
+    AccountDetails2.classList.remove("cl");
+    AccountDetails3.classList.remove("cl");
+    AccountDetails4.classList.remove("cl");
+    AccountDetails5.classList.remove("cl");
+    setTimeout(() => {
+        Hidebt.classList.add("cl");
+    }, 200)
+}
+
+let MH1_1 = document.querySelector(".MH1_1");
+let MH1_2 = document.querySelector(".MH1_2");
+let MH1_3 = document.querySelector(".MH1_3");
+
+MH1_1.addEventListener("mouseover", () => {
+    Hint.classList.add("cl");
+    HintMT.innerHTML = "Invoker";
+})
+
+MH1_1.addEventListener("mouseout", () => {
+    Hint.classList.remove("cl");
+})
+
+MH1_2.addEventListener("mouseover", () => {
+    Hint.classList.add("cl");
+    HintMT.innerHTML = "Meepo";
+})
+
+MH1_2.addEventListener("mouseout", () => {
+    Hint.classList.remove("cl");
+})
+
+MH1_3.addEventListener("mouseover", () => {
+    Hint.classList.add("cl");
+    HintMT.innerHTML = "Anti-Mage";
+})
+
+MH1_3.addEventListener("mouseout", () => {
+    Hint.classList.remove("cl");
+})
+
+let MH2_1 = document.querySelector(".MH2_1");
+let MH2_2 = document.querySelector(".MH2_2");
+let MH2_3 = document.querySelector(".MH2_3");
+
+MH2_1.addEventListener("mouseover", () => {
+    Hint.classList.add("cl");
+    HintMT.innerHTML = "Techies";
+})
+
+MH2_1.addEventListener("mouseout", () => {
+    Hint.classList.remove("cl");
+})
+
+MH2_2.addEventListener("mouseover", () => {
+    Hint.classList.add("cl");
+    HintMT.innerHTML = "Undying";
+})
+
+MH2_2.addEventListener("mouseout", () => {
+    Hint.classList.remove("cl");
+})
+
+MH2_3.addEventListener("mouseover", () => {
+    Hint.classList.add("cl");
+    HintMT.innerHTML = "Shadow Shaman";
+})
+
+MH2_3.addEventListener("mouseout", () => {
+    Hint.classList.remove("cl");
+})
+
+let MH3_1 = document.querySelector(".MH3_1");
+let MH3_2 = document.querySelector(".MH3_2");
+let MH3_3 = document.querySelector(".MH3_3");
+
+MH3_1.addEventListener("mouseover", () => {
+    Hint.classList.add("cl");
+    HintMT.innerHTML = "Clinkz";
+})
+
+MH3_1.addEventListener("mouseout", () => {
+    Hint.classList.remove("cl");
+})
+
+MH3_2.addEventListener("mouseover", () => {
+    Hint.classList.add("cl");
+    HintMT.innerHTML = "Pugna";
+})
+
+MH3_2.addEventListener("mouseout", () => {
+    Hint.classList.remove("cl");
+})
+
+MH3_3.addEventListener("mouseover", () => {
+    Hint.classList.add("cl");
+    HintMT.innerHTML = "Timbersaw";
+})
+
+MH3_3.addEventListener("mouseout", () => {
+    Hint.classList.remove("cl");
+})
+
+let MH4_1 = document.querySelector(".MH4_1");
+let MH4_2 = document.querySelector(".MH4_2");
+let MH4_3 = document.querySelector(".MH4_3");
+
+MH4_1.addEventListener("mouseover", () => {
+    Hint.classList.add("cl");
+    HintMT.innerHTML = "Arc Warden";
+})
+
+MH4_1.addEventListener("mouseout", () => {
+    Hint.classList.remove("cl");
+})
+
+MH4_2.addEventListener("mouseover", () => {
+    Hint.classList.add("cl");
+    HintMT.innerHTML = "Naga Siren";
+})
+
+MH4_2.addEventListener("mouseout", () => {
+    Hint.classList.remove("cl");
+})
+
+MH4_3.addEventListener("mouseover", () => {
+    Hint.classList.add("cl");
+    HintMT.innerHTML = "HoodWink";
+})
+
+MH4_3.addEventListener("mouseout", () => {
+    Hint.classList.remove("cl");
+})
+
+let MH5_1 = document.querySelector(".MH5_1");
+let MH5_2 = document.querySelector(".MH5_3");
+let MH5_3 = document.querySelector(".MH5_3");
+
+MH5_1.addEventListener("mouseover", () => {
+    Hint.classList.add("cl");
+    HintMT.innerHTML = "Naga Siren";
+})
+
+MH5_1.addEventListener("mouseout", () => {
+    Hint.classList.remove("cl");
+})
+
+MH5_2.addEventListener("mouseover", () => {
+    Hint.classList.add("cl");
+    HintMT.innerHTML = "Lion";
+})
+
+MH5_2.addEventListener("mouseout", () => {
+    Hint.classList.remove("cl");
+})
+
+MH5_3.addEventListener("mouseover", () => {
+    Hint.classList.add("cl");
+    HintMT.innerHTML = "Riki";
+})
+
+MH5_3.addEventListener("mouseout", () => {
+    Hint.classList.remove("cl");
+})
