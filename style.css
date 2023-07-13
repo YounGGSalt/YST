@@ -226,7 +226,7 @@ p {
 }
 
 .PBG5 {
-    background-image: url(img/);
+    background-image: url(img/Dead/1.png);
     opacity: 0;
     transition: 0.4s;
 }
@@ -270,7 +270,7 @@ p {
 }
 
 .IMG5 {
-    background-image: url(img/Logo.png);
+    background-image: url(img/Dead/1.png);
     background-size: 130%;
 }
 
@@ -395,6 +395,9 @@ p {
     text-align: center;
     backdrop-filter: blur(8px);
     background-color: rgba(14, 14, 14, 0.8);
+    background-repeat: no-repeat;
+    background-size: 170%;
+    background-position: center;
     overflow: hidden;
     opacity: 0;
     transition: 0.6s;
@@ -402,6 +405,96 @@ p {
 
 .Information.cl {
     opacity: 1;
+    transition: 0.4s;
+}
+
+#INF1 {
+    background-image: none;
+    filter: blur(0px);
+    transition: 0.4s;
+}
+
+#INF1.cl1 {
+    background-image: none;
+    filter: blur(10px);
+    transition: 0.4s;
+}
+
+#INF1.cl2 {
+    background-image: url(img/Incr3d1ble/2.jpg);
+    filter: blur(0px);
+    transition: 0.4s;
+}
+
+#INF2 {
+    background-image: none;
+    filter: blur(0px);
+    transition: 0.4s;
+}
+
+#INF2.cl1 {
+    background-image: none;
+    filter: blur(10px);
+    transition: 0.4s;
+}
+
+#INF2.cl2 {
+    background-image: url(img/Vi/3.png);
+    filter: blur(0px);
+    transition: 0.4s;
+}
+
+#INF3 {
+    background-image: none;
+    filter: blur(0px);
+    transition: 0.4s;
+}
+
+#INF3.cl1 {
+    background-image: none;
+    filter: blur(10px);
+    transition: 0.4s;
+}
+
+#INF3.cl2 {
+    background-image: url(img/YUN1/5.png);
+    filter: blur(0px);
+    transition: 0.4s;
+}
+
+#INF4 {
+    background-image: none;
+    filter: blur(0px);
+    transition: 0.4s;
+}
+
+#INF4.cl1 {
+    background-image: none;
+    filter: blur(10px);
+    transition: 0.4s;
+}
+
+#INF4.cl2 {
+    background-image: url(img/ArcWagner/2.png);
+    filter: blur(0px);
+    transition: 0.4s;
+}
+
+#INF5 {
+    background-image: none;
+    filter: blur(0px);
+    transition: 0.4s;
+}
+
+#INF5.cl1 {
+    background-image: none;
+    filter: blur(10px);
+    transition: 0.4s;
+}
+
+#INF5.cl2 {
+    background-image: url(img/Dead/1.png);
+    filter: blur(0px);
     transition: 0.4s;
 }
 
@@ -1142,26 +1235,6 @@ p {
     border-radius: 5px;
     opacity: 1;
     transition: 0.2s;
-}
-
-.RI1 {
-    background-image: url(img/Ranks/2.png);
-}
-
-.RI2 {
-    background-image: url(img/Ranks/2.png);
-}
-
-.RI3 {
-    background-image: url(img/Ranks/0.png);
-}
-
-.RI4 {
-    background-image: url(img/Ranks/3.png);
-}
-
-.RI5 {
-    background-image: url(img/Ranks/0.png);
 }
 
 .InGameDate {
@@ -2053,7 +2126,7 @@ p {
 }
 
 #Hint.cl {
-    top: 80%;
+    top: 85%;
     height: 50px;
     width: 130px;
     margin-top: -25px;
@@ -2092,6 +2165,34 @@ p {
 }
 
 .closebt:hover {
+    color: rgba(255, 40, 85, 0.6);
+    background-color: rgba(29, 29, 29, 0.8);
+    border: 1px solid rgba(255, 40, 85, 0.6);
+    box-shadow: 0px 0px 20px 1px rgba(255, 35, 35, 0.4);
+    transition: 0.2s;
+}
+
+.remakebt {
+    position: absolute;
+    top: 6%;
+    left: 82%;
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(54, 54, 54);
+    padding-top: 3px;
+    font-size: 170%;
+    background-color: rgba(29, 29, 29, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.remakebt:hover {
     color: rgba(255, 40, 85, 0.6);
     background-color: rgba(29, 29, 29, 0.8);
     border: 1px solid rgba(255, 40, 85, 0.6);
