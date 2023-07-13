@@ -3,15 +3,25 @@ let HintMT = document.getElementById("HintMT");
 
 let MT = document.querySelector(".MainText");
 
-window.onload = () => {
-    let VBG = document.getElementById("VBG");
-    let SRC = document.createElement("source");
-    SRC.setAttribute("src", "vids/Windranger.mp4");
-    // SRC.setAttribute("src", "vids/Juggernaut.mp4");
-    SRC.setAttribute("type", "video/mp4");
-    VBG.append(SRC);
-}
+now = moment();
 
+if (now.format("HH") >= 0 && now.format("HH") <= 12) {
+    window.onload = () => {
+        let VBG = document.getElementById("VBG");
+        let SRC = document.createElement("source");
+        SRC.setAttribute("src", "vids/Juggernaut.mp4");
+        SRC.setAttribute("type", "video/mp4");
+        VBG.append(SRC);
+    }
+} else {
+    window.onload = () => {
+        let VBG = document.getElementById("VBG");
+        let SRC = document.createElement("source");
+        SRC.setAttribute("src", "vids/Windranger.mp4");
+        SRC.setAttribute("type", "video/mp4");
+        VBG.append(SRC);
+    }
+}
 
 // setTimeout(() => {
 //     MT.innerHTML = "Young Stars Team";
@@ -433,7 +443,7 @@ if (DotaInfo === true) {
     let Loses = Matches-Wins;
     let Hours = 2130+525;
     let InGameDate = "20.10.2021";
-    let MMR = 1280;
+    let MMR = 1280+1;
     let WinStreak = 20;
     let WinRate = Wins/Matches*100;
     let BattleCups = 0;
@@ -444,13 +454,30 @@ if (DotaInfo === true) {
     Hours1.innerHTML = Hours;
     InGameDate1.innerHTML = InGameDate;
     let RankIMG1 = document.getElementById("RankIMG1");
+    if (MMR <= 610) {
+        RankIMG1.style.backgroundImage = "url(img/Ranks/1.png)";
+    } else if (MMR >= 770 && MMR <= 1540) {
+        RankIMG1.style.backgroundImage = "url(img/Ranks/2.png)";
+    } else if (MMR >= 1540 && MMR <= 2310) {
+        RankIMG1.style.backgroundImage = "url(img/Ranks/3.png)";
+    } else if (MMR >= 2310 && MMR <= 3080) {
+        RankIMG1.style.backgroundImage = "url(img/Ranks/4.png)";
+    } else if (MMR >= 3080 && MMR <= 3850) {
+        RankIMG1.style.backgroundImage = "url(img/Ranks/5.png)";
+    } else if (MMR >= 3850 && MMR <= 4620) {
+        RankIMG1.style.backgroundImage = "url(img/Ranks/6.png)";
+    } else if (MMR >= 4620 && MMR <= 5420) {
+        RankIMG1.style.backgroundImage = "url(img/Ranks/7.png)";
+    } else if (MMR === "On calibration") {
+        RankIMG1.style.backgroundImage = "url(img/Ranks/0.png)";
+    }
     RankIMG1.addEventListener("mouseover", () => {
         Hint.classList.add("cl");
-        HintMT.innerHTML = MMR;
+        HintMT.innerHTML = MMR-1;
     })
     RankIMG1.addEventListener("mouseout", () => {
         Hint.classList.remove("cl");
-        HintMT.innerHTML = MMR;
+        HintMT.innerHTML = MMR-1;
     })
     WinStreak1.innerHTML = WinStreak;
     WinRate1.innerHTML = WinRate.toFixed(2) + "%";
@@ -475,7 +502,7 @@ if (DotaInfo === true) {
     let Loses = Matches-Wins;
     let Hours = 533;
     let InGameDate = "14.01.2021";
-    let MMR = 1390;
+    let MMR = 1390+1;
     let WinStreak = 7;
     let WinRate = Wins/Matches*100;
     let BattleCups = 0;
@@ -486,13 +513,30 @@ if (DotaInfo === true) {
     Hours2.innerHTML = Hours;
     InGameDate2.innerHTML = InGameDate;
     let RankIMG2 = document.getElementById("RankIMG2");
+    if (MMR <= 610) {
+        RankIMG2.style.backgroundImage = "url(img/Ranks/1.png)";
+    } else if (MMR >= 770 && MMR <= 1540) {
+        RankIMG2.style.backgroundImage = "url(img/Ranks/2.png)";
+    } else if (MMR >= 1540 && MMR <= 2310) {
+        RankIMG2.style.backgroundImage = "url(img/Ranks/3.png)";
+    } else if (MMR >= 2310 && MMR <= 3080) {
+        RankIMG2.style.backgroundImage = "url(img/Ranks/4.png)";
+    } else if (MMR >= 3080 && MMR <= 3850) {
+        RankIMG2.style.backgroundImage = "url(img/Ranks/5.png)";
+    } else if (MMR >= 3850 && MMR <= 4620) {
+        RankIMG2.style.backgroundImage = "url(img/Ranks/6.png)";
+    } else if (MMR >= 4620 && MMR <= 5420) {
+        RankIMG2.style.backgroundImage = "url(img/Ranks/7.png)";
+    } else if (MMR === "On calibration") {
+        RankIMG2.style.backgroundImage = "url(img/Ranks/0.png)";
+    }
     RankIMG2.addEventListener("mouseover", () => {
         Hint.classList.add("cl");
-        HintMT.innerHTML = MMR;
+        HintMT.innerHTML = MMR-1;
     })
     RankIMG2.addEventListener("mouseout", () => {
         Hint.classList.remove("cl");
-        HintMT.innerHTML = MMR;
+        HintMT.innerHTML = MMR-1;
     })
     WinStreak2.innerHTML = WinStreak;
     WinRate2.innerHTML = WinRate.toFixed(2) + "%";
@@ -528,6 +572,23 @@ if (DotaInfo === true) {
     Hours3.innerHTML = Hours;
     InGameDate3.innerHTML = InGameDate;
     let RankIMG3 = document.getElementById("RankIMG3");
+    if (MMR <= 610) {
+        RankIMG3.style.backgroundImage = "url(img/Ranks/1.png)";
+    } else if (MMR >= 770 && MMR <= 1540) {
+        RankIMG3.style.backgroundImage = "url(img/Ranks/2.png)";
+    } else if (MMR >= 1540 && MMR <= 2310) {
+        RankIMG3.style.backgroundImage = "url(img/Ranks/3.png)";
+    } else if (MMR >= 2310 && MMR <= 3080) {
+        RankIMG3.style.backgroundImage = "url(img/Ranks/4.png)";
+    } else if (MMR >= 3080 && MMR <= 3850) {
+        RankIMG3.style.backgroundImage = "url(img/Ranks/5.png)";
+    } else if (MMR >= 3850 && MMR <= 4620) {
+        RankIMG3.style.backgroundImage = "url(img/Ranks/6.png)";
+    } else if (MMR >= 4620 && MMR <= 5420) {
+        RankIMG3.style.backgroundImage = "url(img/Ranks/7.png)";
+    } else if (MMR === "On calibration") {
+        RankIMG3.style.backgroundImage = "url(img/Ranks/0.png)";
+    }
     RankIMG3.addEventListener("mouseover", () => {
         Hint.classList.add("cl");
         HintMT.innerHTML = MMR;
@@ -559,7 +620,7 @@ if (DotaInfo === true) {
     let Loses = Matches-Wins;
     let Hours = 313+383;
     let InGameDate = "23.10.2022";
-    let MMR = 1530;
+    let MMR = 1540+1;
     let WinStreak = 7;
     let WinRate = Wins/Matches*100;
     let BattleCups = 0;
@@ -570,13 +631,30 @@ if (DotaInfo === true) {
     Hours4.innerHTML = Hours;
     InGameDate4.innerHTML = InGameDate;
     let RankIMG4 = document.getElementById("RankIMG4");
+    if (MMR <= 610) {
+        RankIMG4.style.backgroundImage = "url(img/Ranks/1.png)";
+    } else if (MMR >= 770 && MMR <= 1540) {
+        RankIMG4.style.backgroundImage = "url(img/Ranks/2.png)";
+    } else if (MMR >= 1540 && MMR <= 2310) {
+        RankIMG4.style.backgroundImage = "url(img/Ranks/3.png)";
+    } else if (MMR >= 2310 && MMR <= 3080) {
+        RankIMG4.style.backgroundImage = "url(img/Ranks/4.png)";
+    } else if (MMR >= 3080 && MMR <= 3850) {
+        RankIMG4.style.backgroundImage = "url(img/Ranks/5.png)";
+    } else if (MMR >= 3850 && MMR <= 4620) {
+        RankIMG4.style.backgroundImage = "url(img/Ranks/6.png)";
+    } else if (MMR >= 4620 && MMR <= 5420) {
+        RankIMG4.style.backgroundImage = "url(img/Ranks/0.png)";
+    } else if (MMR === "On calibration") {
+        RankIMG4.style.backgroundImage = "url(img/Ranks/0.png)";
+    }
     RankIMG4.addEventListener("mouseover", () => {
         Hint.classList.add("cl");
-        HintMT.innerHTML = MMR;
+        HintMT.innerHTML = MMR-1;
     })
     RankIMG4.addEventListener("mouseout", () => {
         Hint.classList.remove("cl");
-        HintMT.innerHTML = MMR;
+        HintMT.innerHTML = MMR-1;
     })
     WinStreak4.innerHTML = WinStreak;
     WinRate4.innerHTML = WinRate.toFixed(2) + "%";
@@ -612,6 +690,23 @@ if (DotaInfo === true) {
     Hours5.innerHTML = Hours;
     InGameDate5.innerHTML = InGameDate;
     let RankIMG5 = document.getElementById("RankIMG5");
+    if (MMR <= 610) {
+        RankIMG5.style.backgroundImage = "url(img/Ranks/1.png)";
+    } else if (MMR >= 770 && MMR <= 1540) {
+        RankIMG5.style.backgroundImage = "url(img/Ranks/2.png)";
+    } else if (MMR >= 1540 && MMR <= 2310) {
+        RankIMG5.style.backgroundImage = "url(img/Ranks/3.png)";
+    } else if (MMR >= 2310 && MMR <= 3080) {
+        RankIMG5.style.backgroundImage = "url(img/Ranks/4.png)";
+    } else if (MMR >= 3080 && MMR <= 3850) {
+        RankIMG5.style.backgroundImage = "url(img/Ranks/5.png)";
+    } else if (MMR >= 3850 && MMR <= 4620) {
+        RankIMG5.style.backgroundImage = "url(img/Ranks/6.png)";
+    } else if (MMR >= 4620 && MMR <= 5420) {
+        RankIMG5.style.backgroundImage = "url(img/Ranks/7.png)";
+    } else if (MMR === "On calibration") {
+        RankIMG5.style.backgroundImage = "url(img/Ranks/0.png)";
+    }
     RankIMG5.addEventListener("mouseover", () => {
         Hint.classList.add("cl");
         HintMT.innerHTML = MMR;
@@ -964,3 +1059,94 @@ MH5_3.addEventListener("mouseover", () => {
 MH5_3.addEventListener("mouseout", () => {
     Hint.classList.remove("cl");
 })
+
+let RB1 = document.getElementById("rem1");
+    RB1.onclick = function Rbt1() {
+        INF1.classList.add("cl1");
+        setTimeout(() => {
+            INF1.classList.remove("cl1");
+            INF1.classList.add("cl2");
+        }, 200)
+        RB1.onclick = () => {
+            INF1.classList.remove("cl2");
+            INF1.classList.add("cl1");
+            setTimeout(() => {
+                INF1.classList.remove("cl1");
+            }, 200)
+            RB1.onclick = () => {
+                Rbt1();
+            }
+        }
+    }
+let RB2 = document.getElementById("rem2");
+    RB2.onclick = function Rbt2() {
+        INF2.classList.add("cl1");
+        setTimeout(() => {
+            INF2.classList.remove("cl1");
+            INF2.classList.add("cl2");
+        }, 200)
+        RB2.onclick = () => {
+            INF2.classList.remove("cl2");
+            INF2.classList.add("cl1");
+            setTimeout(() => {
+                INF2.classList.remove("cl1");
+            }, 200)
+            RB2.onclick = () => {
+                Rbt2();
+            }
+        }
+    }
+let RB3 = document.getElementById("rem3");
+    RB3.onclick = function Rbt3() {
+        INF3.classList.add("cl1");
+        setTimeout(() => {
+            INF3.classList.remove("cl1");
+            INF3.classList.add("cl2");
+        }, 200)
+        RB3.onclick = () => {
+            INF3.classList.remove("cl2");
+            INF3.classList.add("cl1");
+            setTimeout(() => {
+                INF3.classList.remove("cl1");
+            }, 200)
+            RB3.onclick = () => {
+                Rbt3();
+            }
+        }
+    }
+let RB4 = document.getElementById("rem4");
+    RB4.onclick = function Rbt4() {
+        INF4.classList.add("cl1");
+        setTimeout(() => {
+            INF4.classList.remove("cl1");
+            INF4.classList.add("cl2");
+        }, 200)
+        RB4.onclick = () => {
+            INF4.classList.remove("cl2");
+            INF4.classList.add("cl1");
+            setTimeout(() => {
+                INF4.classList.remove("cl1");
+            }, 200)
+            RB4.onclick = () => {
+                Rbt4();
+            }
+        }
+    }
+let RB5 = document.getElementById("rem5");
+    RB5.onclick = function Rbt5() {
+        INF5.classList.add("cl1");
+        setTimeout(() => {
+            INF5.classList.remove("cl1");
+            INF5.classList.add("cl2");
+        }, 200)
+        RB5.onclick = () => {
+            INF5.classList.remove("cl2");
+            INF5.classList.add("cl1");
+            setTimeout(() => {
+                INF5.classList.remove("cl1");
+            }, 200)
+            RB5.onclick = () => {
+                Rbt5();
+            }
+        }
+    }
