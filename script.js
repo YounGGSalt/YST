@@ -943,7 +943,7 @@ MH4_3.addEventListener("mouseout", () => {
 })
 
 let MH5_1 = document.querySelector(".MH5_1");
-let MH5_2 = document.querySelector(".MH5_3");
+let MH5_2 = document.querySelector(".MH5_2");
 let MH5_3 = document.querySelector(".MH5_3");
 
 MH5_1.addEventListener("mouseover", () => {
@@ -957,7 +957,7 @@ MH5_1.addEventListener("mouseout", () => {
 
 MH5_2.addEventListener("mouseover", () => {
     Hint.classList.add("cl");
-    HintMT.innerHTML = "Lion";
+    HintMT.innerHTML = "Riki";
 })
 
 MH5_2.addEventListener("mouseout", () => {
@@ -966,7 +966,7 @@ MH5_2.addEventListener("mouseout", () => {
 
 MH5_3.addEventListener("mouseover", () => {
     Hint.classList.add("cl");
-    HintMT.innerHTML = "Riki";
+    HintMT.innerHTML = "Lion";
 })
 
 MH5_3.addEventListener("mouseout", () => {
