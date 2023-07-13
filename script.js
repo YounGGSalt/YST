@@ -3,6 +3,8 @@ let HintMT = document.getElementById("HintMT");
 
 let MT = document.querySelector(".MainText");
 
+now = moment();
+
 if (now.format("HH") >= 0 && now.format("HH") <= 12) {
     window.onload = () => {
         let VBG = document.getElementById("VBG");
