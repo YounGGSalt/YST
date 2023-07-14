@@ -414,6 +414,12 @@ p {
     transition: 0.4s;
 }
 
+#INF1.cl {
+    border: 1px solid rgba(194, 0, 48, 0.7);
+    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
+    transition: 0.4s;
+}
+
 #INF1.cl1 {
     background-image: none;
     filter: blur(10px);
@@ -421,6 +427,10 @@ p {
 }
 
 #INF1.cl2 {
+    border: 1px solid rgba(194, 0, 48, 0.7);
+    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
+    border: 1px solid rgba(194, 0, 48, 0.7);
+    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
     background-image: url(img/Incr3d1ble/2.jpg);
     filter: blur(0px);
     transition: 0.4s;
@@ -432,6 +442,12 @@ p {
     transition: 0.4s;
 }
 
+#INF2.cl {
+    border: 1px solid rgba(194, 0, 48, 0.7);
+    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
+    transition: 0.4s;
+}
+
 #INF2.cl1 {
     background-image: none;
     filter: blur(10px);
@@ -439,6 +455,8 @@ p {
 }
 
 #INF2.cl2 {
+    border: 1px solid rgba(194, 0, 48, 0.7);
+    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
     background-image: url(img/Vi/3.png);
     filter: blur(0px);
     transition: 0.4s;
@@ -450,6 +468,12 @@ p {
     transition: 0.4s;
 }
 
+#INF3.cl {
+    border: 1px solid rgba(194, 0, 48, 0.7);
+    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
+    transition: 0.4s;
+}
+
 #INF3.cl1 {
     background-image: none;
     filter: blur(10px);
@@ -457,6 +481,8 @@ p {
 }
 
 #INF3.cl2 {
+    border: 1px solid rgba(194, 0, 48, 0.7);
+    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
     background-image: url(img/YUN1/5.png);
     filter: blur(0px);
     transition: 0.4s;
@@ -468,6 +494,12 @@ p {
     transition: 0.4s;
 }
 
+#INF4.cl {
+    border: 1px solid rgba(194, 0, 48, 0.7);
+    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
+    transition: 0.4s;
+}
+
 #INF4.cl1 {
     background-image: none;
     filter: blur(10px);
@@ -475,6 +507,8 @@ p {
 }
 
 #INF4.cl2 {
+    border: 1px solid rgba(194, 0, 48, 0.7);
+    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
     background-image: url(img/ArcWagner/2.png);
     filter: blur(0px);
     transition: 0.4s;
@@ -486,6 +520,12 @@ p {
     transition: 0.4s;
 }
 
+#INF5.cl {
+    border: 1px solid rgba(194, 0, 48, 0.7);
+    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
+    transition: 0.4s;
+}
+
 #INF5.cl1 {
     background-image: none;
     filter: blur(10px);
@@ -493,6 +533,8 @@ p {
 }
 
 #INF5.cl2 {
+    border: 1px solid rgba(194, 0, 48, 0.7);
+    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
     background-image: url(img/Dead/1.png);
     filter: blur(0px);
     transition: 0.4s;
@@ -2192,7 +2234,8 @@ p {
     transition: 0.4s;
 }
 
-.remakebt:hover {
+.remakebt:hover,
+.remakebt.hover {
     color: rgba(255, 40, 85, 0.6);
     background-color: rgba(29, 29, 29, 0.8);
     border: 1px solid rgba(255, 40, 85, 0.6);
