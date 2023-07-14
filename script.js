@@ -141,7 +141,6 @@ Person1.addEventListener("click", () => {
     Hidebt.classList.remove("cl");
     setTimeout(() => {
         INF1.classList.add("cl");
-        INF1.style.cssText = "box-shadow: 0px 0px 10px 3px rgba(255, 0, 85, 0.5);";
     }, 500)
 })
 INB1.addEventListener("click", () => {
@@ -203,7 +202,6 @@ Person2.addEventListener("click", () => {
     INFB2.classList.add("cl");
     setTimeout(() => {
         INF2.classList.add("cl");
-        INF2.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
     }, 500)
 })
 INB2.addEventListener("click", () => {
@@ -230,7 +228,6 @@ INB2.addEventListener("click", () => {
     INFB2.classList.add("cl");
     setTimeout(() => {
         INF2.classList.add("cl");
-        INF2.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
     }, 500)
 })
 
@@ -266,7 +263,6 @@ Person3.addEventListener("click", () => {
     INFB3.classList.add("cl");
     setTimeout(() => {
         INF3.classList.add("cl");
-        INF3.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
     }, 500)
 })
 INB3.addEventListener("click", () => {
@@ -293,7 +289,6 @@ INB3.addEventListener("click", () => {
     INFB3.classList.add("cl");
     setTimeout(() => {
         INF3.classList.add("cl");
-        INF3.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
     }, 500)
 })
 
@@ -329,7 +324,6 @@ Person4.addEventListener("click", () => {
     INFB4.classList.add("cl");
     setTimeout(() => {
         INF4.classList.add("cl");
-        INF4.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
     }, 500)
 })
 INB4.addEventListener("click", () => {
@@ -356,7 +350,6 @@ INB4.addEventListener("click", () => {
     INFB4.classList.add("cl");
     setTimeout(() => {
         INF4.classList.add("cl");
-        INF4.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
     }, 500)
 })
 
@@ -392,7 +385,6 @@ Person5.addEventListener("click", () => {
     INFB5.classList.add("cl");
     setTimeout(() => {
         INF5.classList.add("cl");
-        INF5.style.cssText = "box-shadow: 0px 0px 10px 5px rgba(255, 0, 85, 0.5);";
     }, 500)
 })
 INB5.addEventListener("click", () => {
@@ -1063,11 +1055,13 @@ MH5_3.addEventListener("mouseout", () => {
 let RB1 = document.getElementById("rem1");
     RB1.onclick = function Rbt1() {
         INF1.classList.add("cl1");
+        RB1.classList.add("hover");
         setTimeout(() => {
             INF1.classList.remove("cl1");
             INF1.classList.add("cl2");
         }, 200)
         RB1.onclick = () => {
+            RB1.classList.remove("hover");
             INF1.classList.remove("cl2");
             INF1.classList.add("cl1");
             setTimeout(() => {
@@ -1081,11 +1075,13 @@ let RB1 = document.getElementById("rem1");
 let RB2 = document.getElementById("rem2");
     RB2.onclick = function Rbt2() {
         INF2.classList.add("cl1");
+        RB2.classList.add("hover");
         setTimeout(() => {
             INF2.classList.remove("cl1");
             INF2.classList.add("cl2");
         }, 200)
         RB2.onclick = () => {
+            RB2.classList.remove("hover");
             INF2.classList.remove("cl2");
             INF2.classList.add("cl1");
             setTimeout(() => {
@@ -1099,11 +1095,13 @@ let RB2 = document.getElementById("rem2");
 let RB3 = document.getElementById("rem3");
     RB3.onclick = function Rbt3() {
         INF3.classList.add("cl1");
+        RB3.classList.add("hover");
         setTimeout(() => {
             INF3.classList.remove("cl1");
             INF3.classList.add("cl2");
         }, 200)
         RB3.onclick = () => {
+            RB3.classList.remove("hover");
             INF3.classList.remove("cl2");
             INF3.classList.add("cl1");
             setTimeout(() => {
@@ -1117,11 +1115,13 @@ let RB3 = document.getElementById("rem3");
 let RB4 = document.getElementById("rem4");
     RB4.onclick = function Rbt4() {
         INF4.classList.add("cl1");
+        RB4.classList.add("hover");
         setTimeout(() => {
             INF4.classList.remove("cl1");
             INF4.classList.add("cl2");
         }, 200)
         RB4.onclick = () => {
+            RB4.classList.add("hover");
             INF4.classList.remove("cl2");
             INF4.classList.add("cl1");
             setTimeout(() => {
@@ -1135,11 +1135,13 @@ let RB4 = document.getElementById("rem4");
 let RB5 = document.getElementById("rem5");
     RB5.onclick = function Rbt5() {
         INF5.classList.add("cl1");
+        RB5.classList.add("hover");
         setTimeout(() => {
             INF5.classList.remove("cl1");
             INF5.classList.add("cl2");
         }, 200)
         RB5.onclick = () => {
+            RB5.classList.add("hover");
             INF5.classList.remove("cl2");
             INF5.classList.add("cl1");
             setTimeout(() => {
