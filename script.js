@@ -1,32 +1,54 @@
+let stat = false;
+let loadscreen = document.getElementById("loadscr");
+let loadText = document.querySelector(".LoadText");
+let loading = document.querySelector(".loading");
+
+window.onload = function loadscr() {
+    stat = !stat;
+
+    if (stat) {
+        function LoadDiv(a, b) {
+            let int = setInterval(() => {
+                loading.style.width = a++ + "px";
+                if (a == b) {
+                    clearInterval(int);
+                    setTimeout(() => {
+                        loadText.classList.add("cl1");
+                        loadText.innerHTML = "COMPLETED";
+                    }, 500)
+                };
+            }, 5)
+        }
+        
+        LoadDiv(0, 200);
+
+        setTimeout(() => {
+            loadscreen.classList.add("cl");
+            loadText.classList.add("cl");
+        }, 2500)
+
+        if (now.format("HH") >= 0 && now.format("HH") <= 12) {
+            let VBG = document.getElementById("VBG");
+            let SRC = document.createElement("source");
+            SRC.setAttribute("src", "vids/Juggernaut.mp4");
+            SRC.setAttribute("type", "video/mp4");
+            VBG.append(SRC);
+        } else {
+            let VBG = document.getElementById("VBG");
+            let SRC = document.createElement("source");
+            SRC.setAttribute("src", "vids/Windranger.mp4");
+            SRC.setAttribute("type", "video/mp4");
+            VBG.append(SRC);
+        }
+    }
+}
+
 let Hint = document.getElementById("Hint");
 let HintMT = document.getElementById("HintMT");
 
 let MT = document.querySelector(".MainText");
 
 now = moment();
-
-if (now.format("HH") >= 0 && now.format("HH") <= 12) {
-    window.onload = () => {
-        let VBG = document.getElementById("VBG");
-        let SRC = document.createElement("source");
-        SRC.setAttribute("src", "vids/Juggernaut.mp4");
-        SRC.setAttribute("type", "video/mp4");
-        VBG.append(SRC);
-    }
-} else {
-    window.onload = () => {
-        let VBG = document.getElementById("VBG");
-        let SRC = document.createElement("source");
-        SRC.setAttribute("src", "vids/Windranger.mp4");
-        SRC.setAttribute("type", "video/mp4");
-        VBG.append(SRC);
-    }
-}
-
-// setTimeout(() => {
-//     MT.innerHTML = "Young Stars Team";
-// }, 4700)
-
 
 let PersonBody = document.querySelector(".PersonBody");
 let Showbt = document.getElementById("Show");
