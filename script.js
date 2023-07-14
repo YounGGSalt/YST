@@ -110,11 +110,13 @@ let AccountDetails5 = document.querySelector(".AccountDetails5");
 Person1.addEventListener("mouseover", () => {
     Person1.classList.add("cl");
     PBG1.classList.add("cl");
+    Person1.classList.add("cl2");
 })
 Person1.addEventListener("mouseout", () => {
     Person1.classList.remove("cl");
     PBG1.classList.remove("cl");
-})
+    Person1.classList.remove("cl2");
+    })
 Person1.addEventListener("click", () => {
     STA1.classList.add("cl");
     STA2.classList.add("cl");
@@ -173,10 +175,12 @@ INB1.addEventListener("click", () => {
 Person2.addEventListener("mouseover", () => {
     Person2.classList.add("cl");
     PBG2.classList.add("cl");
+    Person2.classList.add("cl2");
 })
 Person2.addEventListener("mouseout", () => {
     Person2.classList.remove("cl");
     PBG2.classList.remove("cl");
+    Person2.classList.remove("cl2");
 })
 Person2.addEventListener("click", () => {
     STA1.classList.add("cl");
@@ -234,10 +238,12 @@ INB2.addEventListener("click", () => {
 Person3.addEventListener("mouseover", () => {
     Person3.classList.add("cl");
     PBG3.classList.add("cl");
+    Person3.classList.add("cl2");
 })
 Person3.addEventListener("mouseout", () => {
     Person3.classList.remove("cl");
     PBG3.classList.remove("cl");
+    Person3.classList.remove("cl2");
 })
 Person3.addEventListener("click", () => {
     STA1.classList.add("cl");
@@ -295,10 +301,12 @@ INB3.addEventListener("click", () => {
 Person4.addEventListener("mouseover", () => {
     Person4.classList.add("cl");
     PBG4.classList.add("cl");
+    Person4.classList.add("cl2");
 })
 Person4.addEventListener("mouseout", () => {
     Person4.classList.remove("cl");
     PBG4.classList.remove("cl");
+    Person4.classList.remove("cl2");
 })
 Person4.addEventListener("click", () => {
     STA1.classList.add("cl");
@@ -356,10 +364,12 @@ INB4.addEventListener("click", () => {
 Person5.addEventListener("mouseover", () => {
     Person5.classList.add("cl");
     PBG5.classList.add("cl");
+    Person5.classList.add("cl2");
 })
 Person5.addEventListener("mouseout", () => {
     Person5.classList.remove("cl");
     PBG5.classList.remove("cl");
+    Person5.classList.remove("cl2");
 })
 Person5.addEventListener("click", () => {
     STA1.classList.add("cl");
@@ -721,6 +731,7 @@ let UpdateDate1 = document.querySelector(".UpdateDate1");
     UpdateDate1.innerHTML = "Last update <br>" + UpdateDateNum;
 
 UpdateDateBt1.onclick = () => {
+    UpdateDateBt1.classList.toggle("hover");
     UpdateDate1.classList.toggle("cl");
 }
 
@@ -729,6 +740,7 @@ let UpdateDate2 = document.querySelector(".UpdateDate2");
     UpdateDate2.innerHTML = "Last update <br>" + UpdateDateNum;
 
 UpdateDateBt2.onclick = () => {
+    UpdateDateBt2.classList.toggle("hover");
     UpdateDate2.classList.toggle("cl");
 }
 
@@ -737,6 +749,7 @@ let UpdateDate3 = document.querySelector(".UpdateDate3");
     UpdateDate3.innerHTML = "Last update <br>" + UpdateDateNum;
 
 UpdateDateBt3.onclick = () => {
+    UpdateDateBt3.classList.toggle("hover");
     UpdateDate3.classList.toggle("cl");
 }
 
@@ -745,6 +758,7 @@ let UpdateDate4 = document.querySelector(".UpdateDate4");
     UpdateDate4.innerHTML = "Last update <br>" + UpdateDateNum;
 
 UpdateDateBt4.onclick = () => {
+    UpdateDateBt4.classList.toggle("hover");
     UpdateDate4.classList.toggle("cl");
 }
 
@@ -753,6 +767,7 @@ let UpdateDate5 = document.querySelector(".UpdateDate5");
     UpdateDate5.innerHTML = "Last update <br>" + UpdateDateNum;
 
 UpdateDateBt5.onclick = () => {
+    UpdateDateBt5.classList.toggle("hover");
     UpdateDate5.classList.toggle("cl");
 }
 
