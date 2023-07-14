@@ -103,15 +103,11 @@ p {
 
 @keyframes bxsh {
     0% {
-        box-shadow: 0px 0px 5px 5px rgba(40, 40, 40, 0.5);
-    }
-
-    50% {
-        box-shadow: 0px 0px 5px 5px rgba(180, 0, 50, 0.5);
+        box-shadow: 0px 0px 10px 3px rgba(230, 0, 50, 0.3);
     }
 
     100% {
-        box-shadow: 0px 0px 5px 5px rgba(40, 40, 40, 0.5);
+        box-shadow: 0px 0px 50px 1px rgba(230, 0, 50, 0.5);
     }
 }
 
@@ -123,7 +119,7 @@ p {
     width: 0px;
     background-position: center;
     background-size: 300%;
-    box-shadow: 0px 0px 5px 5px rgba(40, 40, 40, 0.5);
+    box-shadow: 0px 0px 0px 0px rgba(40, 40, 40, 0.5);
     background-color: rgba(8, 8, 8, 0.6);
     transition: 0.4s;
     text-align: center;
@@ -140,11 +136,12 @@ p {
     border-radius: 20px;
     background-position: center;
     background-size: 300%;
-    box-shadow: 0px 0px 5px 5px rgba(40, 40, 40, 0.5);
+    box-shadow: 0px 0px 10px 3px rgba(230, 0, 50, 0.3);
     background-color: rgba(8, 8, 8, 0.6);
     transition: 0.4s;
     text-align: center;
     overflow: hidden;
+    transition: 0.4s;
 }
 
 .Person.cl {
@@ -152,8 +149,13 @@ p {
     border-radius: 20px;
     height: 560px;
     width: 320px;
-    animation: bxsh 3s ease infinite;
+    animation: bxsh 5s ease;
     transition: 0.3s;
+}
+
+.Person.cl2 {
+    box-shadow: 0px 0px 50px 1px rgba(230, 0, 50, 0.5);
+    transition: 0.5s;
 }
 
 @keyframes gradient3 {
@@ -182,7 +184,7 @@ p {
 }
 
 .PBG1 {
-    background-image: url(img/Incr3d1ble/2.jpg);
+    background-image: url(img/YounGGSalt/2.png);
     opacity: 0;
     transition: 0.4s;
 }
@@ -204,7 +206,7 @@ p {
 }
 
 .PBG3 {
-    background-image: url(img/YUN1/5.png);
+    background-image: url(img/YUN1/6.png);
     opacity: 0;
     transition: 0.4s;
 }
@@ -252,7 +254,7 @@ p {
 }
 
 .IMG1 {
-    background-image: url(img/Incr3d1ble/2.jpg);
+    background-image: url(img/YounGGSalt/2.png);
 }
 
 .IMG2 {
@@ -261,7 +263,7 @@ p {
 }
 
 .IMG3 {
-    background-image: url(img/YUN1/5.png);
+    background-image: url(img/YUN1/6.png);
 }
 
 .IMG4 {
@@ -431,7 +433,7 @@ p {
     box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
     border: 1px solid rgba(194, 0, 48, 0.7);
     box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
-    background-image: url(img/Incr3d1ble/2.jpg);
+    background-image: url(img/YounGGSalt/2B.png);
     filter: blur(0px);
     transition: 0.4s;
 }
@@ -457,7 +459,7 @@ p {
 #INF2.cl2 {
     border: 1px solid rgba(194, 0, 48, 0.7);
     box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
-    background-image: url(img/Vi/3.png);
+    background-image: url(img/Vi/3B.png);
     filter: blur(0px);
     transition: 0.4s;
 }
@@ -483,7 +485,7 @@ p {
 #INF3.cl2 {
     border: 1px solid rgba(194, 0, 48, 0.7);
     box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
-    background-image: url(img/YUN1/5.png);
+    background-image: url(img/YUN1/6B.png);
     filter: blur(0px);
     transition: 0.4s;
 }
@@ -509,7 +511,7 @@ p {
 #INF4.cl2 {
     border: 1px solid rgba(194, 0, 48, 0.7);
     box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
-    background-image: url(img/ArcWagner/2.png);
+    background-image: url(img/ArcWagner/2B.png);
     filter: blur(0px);
     transition: 0.4s;
 }
@@ -535,7 +537,7 @@ p {
 #INF5.cl2 {
     border: 1px solid rgba(194, 0, 48, 0.7);
     box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
-    background-image: url(img/Dead/1.png);
+    background-image: url(img/Dead/1B.png);
     filter: blur(0px);
     transition: 0.4s;
 }
@@ -1199,11 +1201,27 @@ p {
     filter: blur(0px);
 }
 
+@keyframes DivName {
+    0% {
+        background-position: 0 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
 .DivName {
     position: relative;
     font-size: 240%;
-    color: rgb(226, 226, 226);
-    text-decoration: underline;
+    text-transform: uppercase;
+    background: linear-gradient(to right, 
+    rgb(0, 0, 0), rgba(230, 0, 50), rgb(0, 0, 0), rgba(230, 0, 50), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: DivName 5s ease infinite;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 .MainInfo {
@@ -1260,12 +1278,12 @@ p {
     width: 46px;
     margin-top: -23px;
     margin-left: -23px;
-    background-size: 107%;
+    background-size: 114%;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 1px 1px 3px 1px #000;
     border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 1px;
+    border-radius: 5px;
     opacity: 0.8;
     transition: 0.5s;
 }
@@ -1274,9 +1292,8 @@ p {
     background-size: 120%;
     border: 1px solid rgb(255, 35, 110);
     box-shadow: 1px 1px 10px 0px rgba(255, 0, 0, 0.69);
-    border-radius: 5px;
     opacity: 1;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .InGameDate {
@@ -1330,9 +1347,10 @@ p {
     border-radius: 1px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 115%;
+    background-size: 117%;
     border: 1px solid rgb(10, 10, 10);
-    opacity: 0.8;
+    filter: brightness(70%);
+    opacity: 1;
     transition: 0.5s;
 }
 
@@ -1340,6 +1358,7 @@ p {
     border: 1px solid rgb(255, 35, 110);
     box-shadow: 1px 1px 10px 0px rgba(255, 0, 0, 0.69);
     border-radius: 5px;
+    filter: brightness(100%);
     opacity: 1;
     transition: 0.2s;
 }
@@ -1917,7 +1936,8 @@ p {
     transition: 0.3s;
 }
 
-.UpdateDateBt1:hover {
+.UpdateDateBt1:hover,
+.UpdateDateBt1.hover {
     border: 1px solid rgb(250, 25, 75);
     background-color: rgb(10, 10, 10);
     box-shadow: 0px 0px 4px 3px rgba(255, 25, 25, 0.6);
