@@ -385,6 +385,20 @@ p {
     transition: 1s;
 }
 
+@keyframes gr1 {
+    0% {
+        background-position: 40% 50%;
+    }
+
+    50% {
+        background-position: 60% 50%;
+    }
+
+    100% {
+        background-position: 40% 50%;
+    }
+}
+
 .Information {
     position: absolute;
     top: 50%;
@@ -398,7 +412,7 @@ p {
     backdrop-filter: blur(8px);
     background-color: rgba(14, 14, 14, 0.8);
     background-repeat: no-repeat;
-    background-size: 170%;
+    background-size: 250%;
     background-position: center;
     overflow: hidden;
     opacity: 0;
@@ -429,8 +443,7 @@ p {
 }
 
 #INF1.cl2 {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
+    animation: gr1 10s ease infinite;
     border: 1px solid rgba(194, 0, 48, 0.7);
     box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
     background-image: url(img/YounGGSalt/2B.png);
@@ -457,6 +470,7 @@ p {
 }
 
 #INF2.cl2 {
+    animation: gr1 10s ease infinite;
     border: 1px solid rgba(194, 0, 48, 0.7);
     box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
     background-image: url(img/Vi/3B.png);
@@ -483,6 +497,7 @@ p {
 }
 
 #INF3.cl2 {
+    animation: gr1 10s ease infinite;
     border: 1px solid rgba(194, 0, 48, 0.7);
     box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
     background-image: url(img/YUN1/6B.png);
@@ -509,6 +524,7 @@ p {
 }
 
 #INF4.cl2 {
+    animation: gr1 10s ease infinite;
     border: 1px solid rgba(194, 0, 48, 0.7);
     box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
     background-image: url(img/ArcWagner/2B.png);
@@ -535,6 +551,7 @@ p {
 }
 
 #INF5.cl2 {
+    animation: gr1 10s ease infinite;
     border: 1px solid rgba(194, 0, 48, 0.7);
     box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
     background-image: url(img/Dead/1B.png);
