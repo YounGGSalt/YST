@@ -1131,8 +1131,7 @@ p {
 }
 
 #line.cl {
-    background-color: rgba(200, 0, 70, 0.5);
-    box-shadow: 0px 0px 10px 5px rgba(200, 0, 70, 0.6);
+    background-color: rgba(200, 0, 70);
     /* animation: bxsh2 5s ease infinite; */
     transition: 0.4s;
 }
@@ -1230,6 +1229,8 @@ p {
 
 .DivName {
     position: relative;
+    top: -5%;
+    left: -15%;
     font-size: 240%;
     text-transform: uppercase;
     background: linear-gradient(to right, 
@@ -2389,4 +2390,439 @@ p {
     background-size: 200%;
     border-radius: 6px;
     border: none;
+}
+
+.dataupdatebt {
+    position: absolute;
+    top: 6%;
+    left: 72%;
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(54, 54, 54);
+    padding-top: 3px;
+    font-size: 170%;
+    background-color: rgba(29, 29, 29, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.dataupdatebt:hover,
+.dataupdatebt.hover {
+    color: rgba(255, 40, 85, 0.6);
+    background-color: rgba(29, 29, 29, 0.8);
+    border: 1px solid rgba(255, 40, 85, 0.6);
+    box-shadow: 0px 0px 20px 1px rgba(255, 35, 35, 0.4);
+    transition: 0.2s;
+}
+
+#PSB {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    z-index: -20;
+    transition: 0s;
+}
+
+#PSB.cl {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    opacity: 1;
+    z-index: 20;
+    transition: 0s;
+}
+
+.passwordDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 120px;
+    width: 220px;
+    margin-top: -60px;
+    margin-left: -110px;
+    border: 1px solid rgb(220, 0, 70);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 10px 3px rgba(255, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+#password {
+    position: absolute;
+    top: 30%;
+    left: 90px;
+    height: 40px;
+    width: 150px;
+    margin-top: -20px;
+    margin-left: -75px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+    color: rgb(220, 0, 70);
+    font-size: 180%;
+    text-align: center;
+    transition: 0.4s;
+}
+
+#password.cl {
+    font-size: 150%;
+    transition: 0.1s;
+}
+
+#password:hover {
+    border: 1px solid rgb(220, 0, 70);
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 5px 1px rgba(255, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+#password:focus {
+    border: 1px solid rgb(220, 0, 70);
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 5px 1px rgba(255, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+#passwordstatbt {
+    position: absolute;
+    top: 18%;
+    left: 78%;
+    border-radius: 10px;
+    border: none;
+    color: rgb(54, 54, 54);
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 3px;
+    font-size: 140%;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+#passwordstatbt:hover {
+    color: rgba(255, 40, 85, 0.6);
+    transition: 0s;
+}
+
+#passwordstatbt.hover {
+    left: 80%;
+    color: rgba(255, 40, 85, 0.6);
+    transition: 0s;
+}
+
+#cancel {
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    border-radius: 10px;
+    border: none;
+    color: rgb(54, 54, 54);
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 3px;
+    font-size: 240%;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+#cancel:hover {
+    color: rgba(255, 40, 85, 0.6);
+    transition: 0.2s;
+}
+
+#enter {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    border-radius: 10px;
+    border: none;
+    color: rgb(54, 54, 54);
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 3px;
+    font-size: 240%;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+#enter:hover {
+    color: rgba(255, 40, 85, 0.6);
+    transition: 0.2s;
+}
+
+.CB {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(8px);
+    opacity: 1;
+    z-index: -20;
+    transition: 0s;
+}
+
+.CB.cl {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    opacity: 1;
+    z-index: 20;
+    transition: 0s;
+}
+
+.ChangesDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 450px;
+    width: 400px;
+    margin-top: -225px;
+    margin-left: -200px;
+    border-radius: 30px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    background-color: rgba(14, 14, 14, 0.8);
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position: center;
+    overflow: hidden;
+}
+
+.CMatches {
+    position: relative;
+    top: 4.5%;
+    right: 18%;
+    font-size: 120%;
+    text-align: center;
+}
+
+.CWins {
+    position: relative;
+    top: -5%;
+    left: 18%;
+    font-size: 120%;
+    text-align: center;
+}
+
+.CHours {
+    position: relative;
+    top: 8%;
+    right: 18%;
+    font-size: 120%;
+    text-align: center;
+}
+
+.CWinStreak {
+    position: relative;
+    top: -10.5%;
+    left: 18%;
+    font-size: 120%;
+    text-align: center;
+}
+
+.CMMR {
+    position: relative;
+    top: 18.5%;
+    font-size: 120%;
+    text-align: center;
+}
+
+.inp {
+    position: absolute;
+    height: 34px;
+    width: 120px;
+    margin-top: -17px;
+    margin-left: -60px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.4s;
+}
+
+.inp:hover {
+    border: 1px solid rgb(220, 0, 70);
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 5px 1px rgba(255, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+.inp:focus {
+    border: 1px solid rgb(220, 0, 70);
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 5px 1px rgba(255, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+.Closebt {
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    border-radius: 5px;
+    border: none;
+    color: rgb(54, 54, 54);
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 3px;
+    font-size: 140%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.Closebt:hover {
+    border: 1px solid rgba(220, 0, 70);
+    color: rgba(255, 40, 85, 0.6);
+    transition: 0.2s;
+}
+
+.Changebt {
+    position: absolute;
+    top: 75%;
+    left: 55%;
+    border-radius: 5px;
+    border: none;
+    color: rgb(54, 54, 54);
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 3px;
+    font-size: 140%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.Changebt:hover {
+    border: 1px solid rgba(220, 0, 70);
+    color: rgba(255, 40, 85, 0.6);
+    transition: 0.2s;
+}
+
+.ICMatches {
+    top: 20%;
+    left: 32.5%;
+}
+
+.ICWins {
+    top: 20%;
+    left: 67.5%;
+}
+
+.ICHours {
+    top: 42.5%;
+    left: 32.5%;
+}
+
+.ICWinStreak {
+    top: 42.5%;
+    left: 67.5%;
+}
+
+.ICMMR {
+    top: 62%;
+    left: 50%;
+}
+
+.Discord {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    margin-top: -25px;
+    margin-left: -25px;
+    border-radius: 15px;
+    border: 3px solid rgb(0, 100, 190);
+    color: rgb(0, 100, 190);
+    background-color: rgba(0, 0, 0, 0);
+    /* border: none;
+    color: black;
+    animation: BGGrad 6s ease infinite;
+    background: linear-gradient(-45deg, 
+    rgb(25, 80, 252), rgb(0, 100, 190), rgb(0, 120, 190), rgb(0, 100, 190), rgb(25, 80, 250));
+    background-size: 200%; */
+    opacity: 0.8;
+    font-size: 160%;
+    box-shadow: 0px 0px 5px 2px rgb(0, 0, 0);
+    transition: 0.4s;
+}
+
+.Discord:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.confidence {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    height: 20px;
+    width: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 128, 0, 0);
+    overflow: hidden;
+}
+
+.MainBody {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    /* left: 50%; */
+    height: 50px;
+    width: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    z-index: 10;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.CF1 {
+    background-color: rgba(50, 255, 101, 0.9);
+}
+
+.CF2 {
+    background-color: rgba(50, 255, 101, 0.9);
+}
+
+.CF3 {
+    background-color: rgba(50, 255, 101, 0.9);
+}
+
+.CF4 {
+    background-color: rgba(50, 255, 101, 0.9);
+}
+
+.CF5 {
+    background-color: rgba(50, 255, 101, 0.9);
+    /* background-color: rgba(255, 255, 50, 0.9); */
+}
+
+.CF_OK {
+    color: black;
+    font-size: 100%;
+    position: absolute;
+    top: 10%;
+    left: 9%;
+}
+
+.CF_NO {
+    color: black;
+    font-size: 100%;
+    position: absolute;
+    top: 10%;
+    left: 9%;
 }
