@@ -16,6 +16,14 @@
 
     </video>
 
+    <div class="MainBody">
+        <form action="https://discord.gg/GaXhnKTanc">
+            <button class="Discord">
+                <i class="fa-brands fa-discord"></i>
+            </button>
+        </form>
+    </div>
+
     <div id="BODY">
         <p class="MainText">
             YOUNG STARS TEAM
@@ -41,7 +49,9 @@
     
                 </div>
                 <div class="PreviewIMG IMG1">
-                    
+                    <div class="confidence CF1">
+                        <i class="fa-regular fa-circle-check CF_OK"></i>
+                    </div>
                 </div>
                 <p class="Name">
                     YOUNGGSALT
@@ -72,7 +82,9 @@
     
                 </div>
                 <div class="PreviewIMG IMG2">
-                    
+                    <div class="confidence CF2">
+                        <i class="fa-regular fa-circle-check CF_OK"></i>
+                    </div>
                 </div>
                 <p class="Name">
                     VI
@@ -103,7 +115,9 @@
     
                 </div>
                 <div class="PreviewIMG IMG3">
-                    
+                    <div class="confidence CF3">
+                        <i class="fa-regular fa-circle-check CF_OK"></i>
+                    </div>
                 </div>
                 <p class="Name">
                     YUN1
@@ -134,7 +148,9 @@
     
                 </div>
                 <div class="PreviewIMG IMG4">
-                    
+                    <div class="confidence CF4">
+                        <i class="fa-regular fa-circle-check CF_OK"></i>
+                    </div>
                 </div>
                 <p class="Name">
                     ARCWAGNER
@@ -165,7 +181,10 @@
     
                 </div>
                 <div class="PreviewIMG IMG5">
-                    
+                    <div class="confidence CF5">
+                        <i class="fa-sharp fa-regular fa-circle-xmark CF_NO"></i>
+                        <i class="fa-regular fa-circle-check CF_OK"></i>
+                    </div>
                 </div>
                 <p class="Name">
                     DEAD
@@ -201,6 +220,9 @@
             </button>
             <button class="remakebt" id="rem1">
                 <i class="fa-solid fa-droplet"></i>
+            </button>
+            <button class="dataupdatebt" id="dup1">
+                <i class="fa-regular fa-pen-to-square"></i>
             </button>
             <p class="InfoText">
                 <p class="DivName">
@@ -292,6 +314,9 @@
             <button class="remakebt" id="rem2">
                 <i class="fa-solid fa-droplet"></i>
             </button>
+            <button class="dataupdatebt" id="dup2">
+                <i class="fa-regular fa-pen-to-square"></i>
+            </button>
             <p class="InfoText">
                 <p class="DivName">
                     Vi
@@ -381,6 +406,9 @@
             </button>
             <button class="remakebt" id="rem3">
                 <i class="fa-solid fa-droplet"></i>
+            </button>
+            <button class="dataupdatebt" id="dup3">
+                <i class="fa-regular fa-pen-to-square"></i>
             </button>
             <p class="InfoText">
                 <p class="DivName">
@@ -472,6 +500,9 @@
             <button class="remakebt" id="rem4">
                 <i class="fa-solid fa-droplet"></i>
             </button>
+            <button class="dataupdatebt" id="dup4">
+                <i class="fa-regular fa-pen-to-square"></i>
+            </button>
             <p class="InfoText">
                 <p class="DivName">
                     ArcWagner
@@ -561,6 +592,9 @@
             </button>
             <button class="remakebt" id="rem5">
                 <i class="fa-solid fa-droplet"></i>
+            </button>
+            <button class="dataupdatebt" id="dup5">
+                <i class="fa-regular fa-pen-to-square"></i>
             </button>
             <p class="InfoText">
                 <p class="DivName">
@@ -660,8 +694,175 @@
         </div>
     </div>
 
-    <script src="libs/moment.js">
-    </script>
+    <div id="PSB">
+        <div class="passwordDiv">
+            <input type="password" id="password" maxlength="14">
+            <button id="passwordstatbt">
+                <i class="fa-solid fa-eye-slash"></i>
+            </button>
+            <button id="cancel">
+                <i class="fa-regular fa-rectangle-xmark"></i>
+            </button>
+            <button id="enter">
+                <i class="fa-regular fa-square-check"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="CB" id="CB1">
+        <div class="ChangesDiv">
+            <p class="CMatches">
+                Matches
+            </p>
+            <input type="text" class="inp ICMatches" id="ICMatches1" maxlength="7">
+            <p class="CWins">
+                Wins
+            </p>
+            <input type="text" class="inp ICWins" id="ICWins1" maxlength="7">
+            <p class="CHours">
+                Hours
+            </p>
+            <input type="text" class="inp ICHours" id="ICHours1" maxlength="7">
+            <p class="CMMR">
+                MMR
+            </p>
+            <input type="text" class="inp ICMMR" id="ICMMR1" maxlength="7">
+            <p class="CWinStreak">
+                Win Streak
+            </p>
+            <input type="text" class="inp ICWinStreak" id="ICWinStreak1" maxlength="7">
+            <button class="Closebt" id="Closebt1">
+                Cancel
+            </button>
+            <button class="Changebt" id="Changebt1">
+                Change
+            </button>
+        </div>
+    </div>
+
+    <div class="CB" id="CB2">
+        <div class="ChangesDiv">
+            <p class="CMatches">
+                Matches
+            </p>
+            <input type="text" class="inp ICMatches" id="ICMatches2" maxlength="7">
+            <p class="CWins">
+                Wins
+            </p>
+            <input type="text" class="inp ICWins" id="ICWins2" maxlength="7">
+            <p class="CHours">
+                Hours
+            </p>
+            <input type="text" class="inp ICHours" id="ICHours2" maxlength="7">
+            <p class="CMMR">
+                MMR
+            </p>
+            <input type="text" class="inp ICMMR" id="ICMMR2" maxlength="7">
+            <p class="CWinStreak">
+                Win Streak
+            </p>
+            <input type="text" class="inp ICWinStreak" id="ICWinStreak2" maxlength="7">
+            <button class="Closebt" id="Closebt2">
+                Cancel
+            </button>
+            <button class="Changebt" id="Changebt2">
+                Change
+            </button>
+        </div>
+    </div>
+
+    <div class="CB" id="CB3">
+        <div class="ChangesDiv">
+            <p class="CMatches">
+                Matches
+            </p>
+            <input type="text" class="inp ICMatches" id="ICMatches3" maxlength="7">
+            <p class="CWins">
+                Wins
+            </p>
+            <input type="text" class="inp ICWins" id="ICWins3" maxlength="7">
+            <p class="CHours">
+                Hours
+            </p>
+            <input type="text" class="inp ICHours" id="ICHours3" maxlength="7">
+            <p class="CMMR">
+                MMR
+            </p>
+            <input type="text" class="inp ICMMR" id="ICMMR3" maxlength="7">
+            <p class="CWinStreak">
+                Win Streak
+            </p>
+            <input type="text" class="inp ICWinStreak" id="ICWinStreak3" maxlength="7">
+            <button class="Closebt" id="Closebt3">
+                Cancel
+            </button>
+            <button class="Changebt" id="Changebt3">
+                Change
+            </button>
+    </div>
+
+    <div class="CB" id="CB4">
+        <div class="ChangesDiv">
+            <p class="CMatches">
+                Matches
+            </p>
+            <input type="text" class="inp ICMatches" id="ICMatches4" maxlength="7">
+            <p class="CWins">
+                Wins
+            </p>
+            <input type="text" class="inp ICWins" id="ICWins4" maxlength="7">
+            <p class="CHours">
+                Hours
+            </p>
+            <input type="text" class="inp ICHours" id="ICHours4" maxlength="7">
+            <p class="CMMR">
+                MMR
+            </p>
+            <input type="text" class="inp ICMMR" id="ICMMR4" maxlength="7">
+            <p class="CWinStreak">
+                Win Streak
+            </p>
+            <input type="text" class="inp ICWinStreak" id="ICWinStreak4" maxlength="7">
+            <button class="Closebt" id="Closebt4">
+                Cancel
+            </button>
+            <button class="Changebt" id="Changebt4">
+                Change
+            </button>
+    </div>
+
+    <div class="CB" id="CB5">
+        <div class="ChangesDiv">
+            <p class="CMatches">
+                Matches
+            </p>
+            <input type="text" class="inp ICMatches" id="ICMatches5" maxlength="7">
+            <p class="CWins">
+                Wins
+            </p>
+            <input type="text" class="inp ICWins" id="ICWins5" maxlength="7">
+            <p class="CHours">
+                Hours
+            </p>
+            <input type="text" class="inp ICHours" id="ICHours5" maxlength="7">
+            <p class="CMMR">
+                MMR
+            </p>
+            <input type="text" class="inp ICMMR" id="ICMMR5" maxlength="7">
+            <p class="CWinStreak">
+                Win Streak
+            </p>
+            <input type="text" class="inp ICWinStreak" id="ICWinStreak5" maxlength="7">
+            <button class="Closebt" id="Closebt5">
+                Cancel
+            </button>
+            <button class="Changebt" id="Changebt5">
+                Change
+            </button>
+    </div>
+
+<script src="libs/moment.js">
+</script>
 </body>
 <script src="script.js">
 </script>
