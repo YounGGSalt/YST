@@ -1,76 +1,149 @@
-html, body {
-    margin: 0 0;
-    width: 100%;
+body {
+    background-color: rgb(10, 10, 10);
+    margin: 0;
     overflow-x: hidden;
-    background-color: rgb(5, 5, 5);
-    background-position: -18px 0%;
-    background-size: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
-}
-
-@keyframes gradient {
-    0% {
-        opacity: 0;
-        background-position: 0 50%;
-    }
-    25% {
-        opacity: 0.6;
-        background-position: 100% 50%;
-    }
-    50% {
-        opacity: 0;
-        background-position: 100% 50%;
-    }
-    75% {
-        opacity: 0.6;
-        background-position: 100% 50%;
-    }
-    100% {
-        opacity: 0.6;
-        background-position: 0 50%;
-    }
-}
-
-*::selection {
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.8);
-    opacity: 1;
-}
-
-p {
-    color: rgb(187, 187, 187);
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.466);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.2s;
 }
 
 ::-webkit-scrollbar {
-    width: 14px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgb(6, 6, 6);
+    background-color: rgba(6, 6, 6, 0);
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    border: 4px solid rgb(6, 6, 6);
     background: linear-gradient(to bottom,
     rgb(40, 40, 40), rgb(35, 35, 35), rgb(30, 30, 30), 
     rgb(25, 25, 25), rgb(20, 20, 20));
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    border: 4px solid rgb(6, 6, 6);
     background: linear-gradient(to bottom,
     rgb(45, 45, 45), rgb(40, 40, 40), rgb(35, 35, 35), 
     rgb(30, 30, 30), rgb(25, 25, 25));
 }
 
-#BODY {
-    position: absolute;
-    height: 100%;
+button {
+    color: rgb(50, 220, 50);
+    font-weight: 600;
+    font-size: 100%;
+    border: 1px solid rgb(50, 220, 50);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: rgba(50, 220, 50, 0);
+    box-shadow: 0px 0px 5px 1px rgb(50, 220, 50, 0.7);
+    transition: all 0.4s;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(50, 220, 50);
+    box-shadow: 0px 0px 8px 1px rgb(50, 220, 50);
+}
+
+.squareBt {
+    border-radius: 9px;
+}
+
+.squareBt.dark {
+    color: rgb(100, 50, 220);
+    font-weight: 600;
+    font-size: 100%;
+    border: 1px solid rgb(100, 50, 220);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: rgba(101, 50, 220, 0);
+    box-shadow: 0px 0px 5px 1px rgb(100, 50, 220, 0.7);
+    transition: all 0.4s;
+}
+
+.squareBt.dark:hover {
+    color: white;
+    background-color: rgb(100, 50, 220);
+    box-shadow: 0px 0px 8px 1px rgb(100, 50, 220);
+}
+
+.circleBt {
+    border-radius: 100%;
+}
+
+.circleBt.dark {
+    color: rgb(100, 50, 220);
+    font-weight: 600;
+    font-size: 100%;
+    border: 1px solid rgb(100, 50, 220);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: rgba(101, 50, 220, 0);
+    box-shadow: 0px 0px 5px 1px rgb(100, 50, 220, 0.7);
+    transition: all 0.4s;
+}
+
+.circleBt.dark:hover {
+    color: white;
+    background-color: rgb(100, 50, 220);
+    box-shadow: 0px 0px 8px 1px rgb(100, 50, 220);
+}
+
+.Place {
+    position: relative;
+    overflow: hidden;
+    height: 1080px;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    z-index: 4;
+}
+
+.PL1 {
+    background-color: rgb(220, 220, 220);
+    transition: all 0.4s;
+}
+
+.PL1.dark {
+    background-color: rgb(20, 20, 20);
+}
+
+.OCbt {
+    position: relative;
+    top: 8%;
+    left: -1px;
+    height: 56px;
+    width: 56px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-size: 180%;
+    transition: all 0.4s;
+}
+
+.OCbt.dark {
+    color: rgb(100, 50, 220);
+    border: 1px solid rgb(100, 50, 220);
+    background-color: rgba(100, 50, 220, 0);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-size: 180%;
+    box-shadow: 0px 0px 5px 1px rgb(100, 50, 220, 0.7);
+    transition: all 0.4s;
+}
+
+.OCbt.dark:hover {
+    color: black;
+    background-color: rgb(100, 50, 220);
+    box-shadow: 0px 0px 8px 1px rgb(100, 50, 220);
+}
+
+.OCbt.cl {
+    left: -70px;
 }
 
 .PersonBody {
@@ -79,2750 +152,319 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     position: absolute;
-    top: 29%;
-    left: 0%;
-    padding-top: 25%;
-    height: 50%;
+    top: 0%;
+    left: -100%;
+    height: 100%;
     width: 100%;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+    padding-top: 3%;
+    backdrop-filter: blur(5px);
+    overflow-y: scroll;
     opacity: 0;
-    transition: 1.2s;
+    transition: 0.6s;
 }
 
 .PersonBody.cl {
-    top: 0%;
     left: 0%;
-    height: 50%;
-    width: 100%;
     opacity: 1;
-    transition: 0.6s;
-}
-
-@keyframes bxsh {
-    0% {
-        box-shadow: 0px 0px 10px 3px rgba(230, 0, 50, 0.3);
-    }
-
-    100% {
-        box-shadow: 0px 0px 50px 1px rgba(230, 0, 50, 0.5);
-    }
+    transition: 0.8s;
 }
 
 .Person {
-    margin: 0 20px 350px;
+    margin: 0 20px 50px;
     position: relative;
-    top: 70%;
-    height: 0px;
-    width: 0px;
-    background-position: center;
-    background-size: 300%;
-    box-shadow: 0px 0px 0px 0px rgba(40, 40, 40, 0.5);
-    background-color: rgba(8, 8, 8, 0.6);
-    transition: 0.4s;
-    text-align: center;
-    overflow: hidden;
-}
-
-.Person.cl1 {
-    margin: 0 20px 350px;
-    position: relative;
-    top: 30%;
-    height: 560px;
-    width: 320px;
-    margin-top: -280px;
+    height: 420px;
+    width: 560px;
+    border: 1px solid black;
     border-radius: 20px;
-    background-position: center;
-    background-size: 300%;
-    box-shadow: 0px 0px 10px 3px rgba(230, 0, 50, 0.3);
-    background-color: rgba(8, 8, 8, 0.6);
-    transition: 0.4s;
-    text-align: center;
-    overflow: hidden;
-    transition: 0.4s;
-}
-
-.Person.cl {
-    margin-top: -280px;
-    border-radius: 20px;
-    height: 560px;
-    width: 320px;
-    animation: bxsh 5s ease;
-    transition: 0.3s;
-}
-
-.Person.cl2 {
-    box-shadow: 0px 0px 50px 1px rgba(230, 0, 50, 0.5);
-    transition: 0.5s;
-}
-
-@keyframes gradient3 {
-    0% {
-        background-position: 0 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0 50%;
-    }
-}
-
-.PersonBG {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background-position: center;
+    filter: brightness(60%);
+    box-shadow: 0px 0px 0px 0px rgb(0, 0, 0);
     background-size: 200%;
-    animation: gradient3 10s ease infinite;
-    filter: blur(60px);
-    z-index: 0;
-}
-
-.PBG1 {
-    background-image: url(img/YounGGSalt/2.png);
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.PBG1.cl {
-    opacity: 1;
-    transition: 0.4s;
-}
-
-.PBG2 {
-    background-image: url(img/Vi/3.png);
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.PBG2.cl {
-    opacity: 1;
-    transition: 0.4s;
-}
-
-.PBG3 {
-    background-image: url(img/YUN1/6.png);
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.PBG3.cl {
-    opacity: 1;
-    transition: 0.4s;
-}
-
-.PBG4 {
-    background-image: url(img/ArcWagner/2.png);
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.PBG4.cl {
-    opacity: 1;
-    transition: 0.4s;
-}
-
-.PBG5 {
-    background-image: url(img/Dead/1.png);
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.PBG5.cl {
-    opacity: 1;
-    transition: 0.4s;
-}
-
-.PreviewIMG {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    height: 200px;
-    width: 280px;
-    margin-top: -40px;
-    margin-left: -140px;
-    background-position: center;
+    text-align: center;
+    font-size: 160%;
+    color: white;
     background-repeat: no-repeat;
-    box-shadow: 3px 3px 6px 4px rgba(0, 0, 0, 0.4);
-    background-size: 100%;
-    border-radius: 10px;
-}
-
-.IMG1 {
-    background-image: url(img/YounGGSalt/2.png);
-}
-
-.IMG2 {
-    background-image: url(img/Vi/3.png);
-    background-size: 100%;
-}
-
-.IMG3 {
-    background-image: url(img/YUN1/6.png);
-}
-
-.IMG4 {
-    background-image: url(img/ArcWagner/2.png);
-    background-size: 100%;
-}
-
-.IMG5 {
-    background-image: url(img/Dead/1.png);
-    background-size: 130%;
-}
-
-.Name {
-    position: relative;
-    font-size: 180%;
-    color: rgba(255, 255, 255);
-    top: -65%;
-}
-
-.Role {
-    position: relative;
-    font-size: 100%;
-    color: rgba(255, 255, 255, 0.6);
-    top: -70%;
-}
-
-.INFB1 {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(8px);
-    z-index: -20;
-    transition: 1s;
-}
-
-.INFB1.cl {
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-    z-index: 20;
-    transition: 1s;
-}
-
-.INFB2 {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(8px);
-    z-index: -20;
-    transition: 1s;
-}
-
-.INFB2.cl {
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-    z-index: 20;
-    transition: 1s;
-}
-
-.INFB3 {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(8px);
-    z-index: -20;
-    transition: 1s;
-}
-
-.INFB3.cl {
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-    z-index: 20;
-    transition: 1s;
-}
-
-.INFB4 {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(8px);
-    z-index: -20;
-    transition: 1s;
-}
-
-.INFB4.cl {
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-    z-index: 20;
-    transition: 1s;
-}
-
-.INFB5 {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(8px);
-    z-index: -20;
-    transition: 1s;
-}
-
-.INFB5.cl {
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-    z-index: 20;
-    transition: 1s;
-}
-
-@keyframes gr1 {
-    0% {
-        background-position: 40% 50%;
-    }
-
-    50% {
-        background-position: 60% 50%;
-    }
-
-    100% {
-        background-position: 40% 50%;
-    }
-}
-
-.Information {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 600px;
-    width: 500px;
-    margin-top: -300px;
-    margin-left: -250px;
-    border-radius: 30px;
-    text-align: center;
-    backdrop-filter: blur(8px);
-    background-color: rgba(14, 14, 14, 0.8);
-    background-repeat: no-repeat;
-    background-size: 250%;
     background-position: center;
-    overflow: hidden;
-    opacity: 0;
-    transition: 0.6s;
+    transition: all 0.4s;
 }
 
-.Information.cl {
-    opacity: 1;
-    transition: 0.4s;
-}
-
-#INF1 {
-    background-image: none;
-    filter: blur(0px);
-    transition: 0.4s;
-}
-
-#INF1.cl {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
-    transition: 0.4s;
-}
-
-#INF1.cl1 {
-    background-image: none;
-    filter: blur(10px);
-    transition: 0.4s;
-}
-
-#INF1.cl2 {
-    animation: gr1 10s ease infinite;
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
-    background-image: url(img/YounGGSalt/2B.png);
-    filter: blur(0px);
-    transition: 0.4s;
-}
-
-#INF2 {
-    background-image: none;
-    filter: blur(0px);
-    transition: 0.4s;
-}
-
-#INF2.cl {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
-    transition: 0.4s;
-}
-
-#INF2.cl1 {
-    background-image: none;
-    filter: blur(10px);
-    transition: 0.4s;
-}
-
-#INF2.cl2 {
-    animation: gr1 10s ease infinite;
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
-    background-image: url(img/Vi/3B.png);
-    filter: blur(0px);
-    transition: 0.4s;
-}
-
-#INF3 {
-    background-image: none;
-    filter: blur(0px);
-    transition: 0.4s;
-}
-
-#INF3.cl {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
-    transition: 0.4s;
-}
-
-#INF3.cl1 {
-    background-image: none;
-    filter: blur(10px);
-    transition: 0.4s;
-}
-
-#INF3.cl2 {
-    animation: gr1 10s ease infinite;
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
-    background-image: url(img/YUN1/6B.png);
-    filter: blur(0px);
-    transition: 0.4s;
-}
-
-#INF4 {
-    background-image: none;
-    filter: blur(0px);
-    transition: 0.4s;
-}
-
-#INF4.cl {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
-    transition: 0.4s;
-}
-
-#INF4.cl1 {
-    background-image: none;
-    filter: blur(10px);
-    transition: 0.4s;
-}
-
-#INF4.cl2 {
-    animation: gr1 10s ease infinite;
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
-    background-image: url(img/ArcWagner/2B.png);
-    filter: blur(0px);
-    transition: 0.4s;
-}
-
-#INF5 {
-    background-image: none;
-    filter: blur(0px);
-    transition: 0.4s;
-}
-
-#INF5.cl {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
-    transition: 0.4s;
-}
-
-#INF5.cl1 {
-    background-image: none;
-    filter: blur(10px);
-    transition: 0.4s;
-}
-
-#INF5.cl2 {
-    animation: gr1 10s ease infinite;
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 50px 5px rgba(200, 0, 50, 0.5);
-    background-image: url(img/Dead/1B.png);
-    filter: blur(0px);
-    transition: 0.4s;
-}
-
-.SteamAccount1 {
-    position: relative;
-    top: -65%;
-    color: rgb(187, 187, 187);
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.466);
-    transition: 0.4s;
-}
-
-.SteamAccount1.cl {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: none;
-    transition: 0.4s;
-}
-
-.SteamAccount2 {
-    position: relative;
-    top: -65%;
-    color: rgb(187, 187, 187);
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.466);
-    transition: 0.4s;
-}
-
-.SteamAccount2.cl {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: none;
-    transition: 0.4s;
-}
-
-.SteamAccount3 {
-    position: relative;
-    top: -65%;
-    color: rgb(187, 187, 187);
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.466);
-    transition: 0.4s;
-}
-
-.SteamAccount3.cl {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: none;
-    transition: 0.4s;
-}
-
-.SteamAccount4 {
-    position: relative;
-    top: -65%;
-    color: rgb(187, 187, 187);
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.466);
-    transition: 0.4s;
-}
-
-.SteamAccount4.cl {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: none;
-    transition: 0.4s;
-}
-
-.SteamAccount5 {
-    position: relative;
-    top: -65%;
-    color: rgb(187, 187, 187);
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.466);
-    transition: 0.4s;
-}
-
-.SteamAccount5.cl {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: none;
-    transition: 0.4s;
-}
-
-.AccountDetails1 {
-    position: relative;
-    top: -59%;
-    color: rgb(187, 187, 187);
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.466);
-    transition: 0.4s;
-}
-
-.AccountDetails1.cl {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: none;
-    transition: 0.4s;
-}
-
-.AccountDetails2 {
-    position: relative;
-    top: -59%;
-    color: rgb(187, 187, 187);
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.466);
-    transition: 0.4s;
-}
-
-.AccountDetails2.cl {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: none;
-    transition: 0.4s;
-}
-
-.AccountDetails3 {
-    position: relative;
-    top: -59%;
-    color: rgb(187, 187, 187);
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.466);
-    transition: 0.4s;
-}
-
-.AccountDetails3.cl {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: none;
-    transition: 0.4s;
-}
-
-.AccountDetails4 {
-    position: relative;
-    top: -59%;
-    color: rgb(187, 187, 187);
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.466);
-    transition: 0.4s;
-}
-
-.AccountDetails4.cl {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: none;
-    transition: 0.4s;
-}
-
-.AccountDetails5 {
-    position: relative;
-    top: -59%;
-    color: rgb(187, 187, 187);
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.466);
-    transition: 0.4s;
-}
-
-.AccountDetails5.cl {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: none;
-    transition: 0.4s;
-}
-
-.fa-eye {
-    position: relative;
-    left: -10%;
-}
-
-.fa-circle-info {
-    position: relative;
-    left: -10%;
-}
-
-#STA1 {
-    position: absolute;
-    height: 36px;
-    width: 120px;
-    margin-top: -18px;
-    margin-left: -60px;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 6px;
-    border: 2px solid rgba(0, 0, 0, 0);
-    color: white;
-    font-size: 80%;
-    font-weight: 600;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
-    top: 66%;
-    left: 50%;
-    opacity: 1;
-    z-index: 3;
-    transition: 0.4s;
-}
-
-#STA1:hover {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 5px 5px rgba(200, 0, 50, 0.2);
-    color: rgba(194, 0, 48, 0.7);
-    transition: 0.4s;
-}
-
-#STA1.cl {
-    opacity: 0;
-    z-index: -3;
-    transition: 0.4s;
-}
-
-#STA2 {
-    position: absolute;
-    height: 36px;
-    width: 120px;
-    margin-top: -18px;
-    margin-left: -60px;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 6px;
-    border: 2px solid rgba(0, 0, 0, 0);
-    color: white;
-    font-size: 80%;
-    font-weight: 600;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
-    top: 66%;
-    left: 50%;
-    opacity: 1;
-    z-index: 3;
-    transition: 0.4s;
-}
-
-#STA2:hover {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 5px 5px rgba(200, 0, 50, 0.2);
-    color: rgba(194, 0, 48, 0.7);
-    transition: 0.4s;
-}
-
-#STA2.cl {
-    opacity: 0;
-    z-index: -3;
-    transition: 0.4s;
-}
-
-#STA3 {
-    position: absolute;
-    height: 36px;
-    width: 120px;
-    margin-top: -18px;
-    margin-left: -60px;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 6px;
-    border: 2px solid rgba(0, 0, 0, 0);
-    color: white;
-    font-size: 80%;
-    font-weight: 600;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
-    top: 66%;
-    left: 50%;
-    opacity: 1;
-    z-index: 3;
-    transition: 0.4s;
-}
-
-#STA3:hover {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 5px 5px rgba(200, 0, 50, 0.2);
-    color: rgba(194, 0, 48, 0.7);
-    transition: 0.4s;
-}
-
-#STA3.cl {
-    opacity: 0;
-    z-index: -3;
-    transition: 0.4s;
-}
-
-#STA4 {
-    position: absolute;
-    height: 36px;
-    width: 120px;
-    margin-top: -18px;
-    margin-left: -60px;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 6px;
-    border: 2px solid rgba(0, 0, 0, 0);
-    color: white;
-    font-size: 80%;
-    font-weight: 600;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
-    top: 66%;
-    left: 50%;
-    opacity: 1;
-    z-index: 3;
-    transition: 0.4s;
-}
-
-#STA4:hover {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 5px 5px rgba(200, 0, 50, 0.2);
-    color: rgba(194, 0, 48, 0.7);
-    transition: 0.4s;
-}
-
-#STA4.cl {
-    opacity: 0;
-    z-index: -3;
-    transition: 0.4s;
-}
-
-#STA5 {
-    position: absolute;
-    height: 36px;
-    width: 120px;
-    margin-top: -18px;
-    margin-left: -60px;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 6px;
-    border: 2px solid rgba(0, 0, 0, 0);
-    color: white;
-    font-size: 80%;
-    font-weight: 600;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
-    top: 66%;
-    left: 50%;
-    opacity: 1;
-    z-index: 3;
-    transition: 0.4s;
-}
-
-#STA5:hover {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 5px 5px rgba(200, 0, 50, 0.2);
-    color: rgba(194, 0, 48, 0.7);
-    transition: 0.4s;
-}
-
-#STA5.cl {
-    opacity: 0;
-    z-index: -3;
-    transition: 0.4s;
-}
-
-#INB1 {
-    position: absolute;
-    height: 36px;
-    width: 120px;
-    margin-top: -18px;
-    margin-left: -60px;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 6px;
-    border: 2px solid rgba(0, 0, 0, 0);
-    color: white;
-    font-size: 80%;
-    font-weight: 600;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
-    top: 78%;
-    left: 50%;
-    opacity: 1;
-    z-index: 3;
-    transition: 0.4s;
-}
-
-#INB1:hover {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 5px 5px rgba(200, 0, 50, 0.2);
-    color: rgba(194, 0, 48, 0.7);
-    transition: 0.4s;
-}
-
-#INB1.cl {
-    opacity: 0;
-    z-index: -3;
-    transition: 0.4s;
-}
-
-#INB2 {
-    position: absolute;
-    height: 36px;
-    width: 120px;
-    margin-top: -18px;
-    margin-left: -60px;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 6px;
-    border: 2px solid rgba(0, 0, 0, 0);
-    color: white;
-    font-size: 80%;
-    font-weight: 600;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
-    top: 78%;
-    left: 50%;
-    opacity: 1;
-    z-index: 3;
-    transition: 0.4s;
-}
-
-#INB2:hover {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 5px 5px rgba(200, 0, 50, 0.2);
-    color: rgba(194, 0, 48, 0.7);
-    transition: 0.4s;
-}
-
-#INB2.cl {
-    opacity: 0;
-    z-index: -3;
-    transition: 0.4s;
-}
-
-#INB3 {
-    position: absolute;
-    height: 36px;
-    width: 120px;
-    margin-top: -18px;
-    margin-left: -60px;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 6px;
-    border: 2px solid rgba(0, 0, 0, 0);
-    color: white;
-    font-size: 80%;
-    font-weight: 600;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
-    top: 78%;
-    left: 50%;
-    opacity: 1;
-    z-index: 3;
-    transition: 0.4s;
-}
-
-#INB3:hover {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 5px 5px rgba(200, 0, 50, 0.2);
-    color: rgba(194, 0, 48, 0.7);
-    transition: 0.4s;
-}
-
-#INB3.cl {
-    opacity: 0;
-    z-index: -3;
-    transition: 0.4s;
-}
-
-#INB4 {
-    position: absolute;
-    height: 36px;
-    width: 120px;
-    margin-top: -18px;
-    margin-left: -60px;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 6px;
-    border: 2px solid rgba(0, 0, 0, 0);
-    color: white;
-    font-size: 80%;
-    font-weight: 600;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
-    top: 78%;
-    left: 50%;
-    opacity: 1;
-    z-index: 3;
-    transition: 0.4s;
-}
-
-#INB4:hover {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 5px 5px rgba(200, 0, 50, 0.2);
-    color: rgba(194, 0, 48, 0.7);
-    transition: 0.4s;
-}
-
-#INB4.cl {
-    opacity: 0;
-    z-index: -3;
-    transition: 0.4s;
-}
-
-#INB5 {
-    position: absolute;
-    height: 36px;
-    width: 120px;
-    margin-top: -18px;
-    margin-left: -60px;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 6px;
-    border: 2px solid rgba(0, 0, 0, 0);
-    color: white;
-    font-size: 80%;
-    font-weight: 600;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
-    top: 78%;
-    left: 50%;
-    opacity: 1;
-    z-index: 3;
-    transition: 0.4s;
-}
-
-#INB5:hover {
-    border: 1px solid rgba(194, 0, 48, 0.7);
-    box-shadow: 0px 0px 5px 5px rgba(200, 0, 50, 0.2);
-    color: rgba(194, 0, 48, 0.7);
-    transition: 0.4s;
-}
-
-#INB5.cl {
-    opacity: 0;
-    z-index: -3;
-    transition: 0.4s;
-}
-
-.MainText {
-    position: relative;
-    text-align: center;
-    font-size: 800%;
-    font-weight: 900;
-    top: -5%;
-    text-transform: uppercase;
-    background: linear-gradient(to right, 
-    rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200%;
-    animation: gradient 10s ease;
-    text-shadow: none;
-    cursor: default;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    opacity: 0.6;
-    transition: 0.4s;
-}
-
-.MainText.cl {
-    background: linear-gradient(to left, 
-    rgba(200, 0, 70), rgba(200, 0, 70), rgba(200, 0, 70), rgba(200, 0, 70), rgba(200, 0, 70));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200%;
-    animation: gradient2 5s ease infinite;
-    text-shadow: none;
-    opacity: 1;
-    transition: 0.4s;
-}
-
-@keyframes gradient2 {
-    0% {
-        opacity: 0;
-        background-position: 0 50%;
-    }
-
-    50% {
-        opacity: 1;
-        background-position: 100% 50%;
-    }
-
-    100% {
-        opacity: 0;
-        background-position: 0 50%;
-    }
-}
-
-.iRole {
-    font-size: 80%;
-}
-
-.status {
-    position: fixed;
-    bottom: 0px;
-    left: 50%;
-    height: 60px;
-    width: 200px;
-    margin-top: -30px;
-    margin-left: -100px;
-    text-align: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding-bottom: 4px;
-    box-shadow: 2px 2px 5px 3px rgb(0, 0, 0, 0.5);
-    overflow: hidden;
-    z-index: 20;
-    transition: 0.3s;
-}
-
-.status:active {
-    background-color: rgba(0, 0, 0, 0.25);
-    transition: 0.1s;
-}
-
-#line {
-    position: relative;
-    height: 6px;
-    width: 100%;
-    background-color: rgb(50, 50, 50);
-    border: none;
-    transition: 0.4s;
-}
-
-#line.cl {
-    background-color: rgba(200, 0, 70);
-    /* animation: bxsh2 5s ease infinite; */
-    transition: 0.4s;
-}
-
-/* @keyframes bxsh2 {
-    0% {
-        opacity: 0;
-        box-shadow: 0px 0px 30px 5px rgba(200, 0, 70);
-    }
-
-    25% {
-        opacity: 0.6;
-        box-shadow: 0px 0px 30px 10px rgba(200, 0, 70);
-    }
-
-    50% {
-        box-shadow: 0px 0px 30px 10px rgba(200, 0, 70);
-    }
-
-    75% {
-        opacity: 0.6;
-        box-shadow: 0px 0px 30px 10px rgba(200, 0, 70);
-    }
-
-    100% {
-        opacity: 0;
-        box-shadow: 0px 0px 30px 5px rgba(200, 0, 70);
-    }
-} */
-
-#Show {
-    position: relative;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    color: rgb(50, 50, 50);
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    font-size: 300%;
-    transition: 0.4s;
-    opacity: 1;
-    z-index: 20;
-}
-
-#Show.cl {
-    color: rgba(200, 0, 70);
-    opacity: 0;
-    z-index: -20;
-    transition: 0.2s;
-}
-
-#Hide {
-    position: relative;
-    top: -100%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    color: rgb(50, 50, 50);
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    font-size: 300%;
-    transition: 0.4s;
-    opacity: 0;
-    z-index: -20;
-}
-
-#Hide.cl {
-    color: rgba(200, 0, 70);
-    opacity: 1;
-    z-index: 20;
-    transition: 0.2s;
-}
-
-#VBG {
-    position: fixed;
-    top: 0%;
-    left: -25%;
-    height: 115%;
-    width: 150%;
-    filter: blur(0px);
-}
-
-@keyframes DivName {
-    0% {
-        background-position: 0 50%;
-    }
-
-    100% {
-        background-position: 100% 50%;
-    }
-}
-
-.DivName {
-    position: relative;
-    top: -5%;
-    left: -15%;
-    font-size: 240%;
-    text-transform: uppercase;
-    background: linear-gradient(to right, 
-    rgb(0, 0, 0), rgba(230, 0, 50), rgb(0, 0, 0), rgba(230, 0, 50), rgb(0, 0, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200%;
-    animation: DivName 5s ease infinite;
-    text-shadow: 5px 5px 5px rgb(0, 0, 0);
-}
-
-.MainInfo {
-    position: relative;
-    font-size: 180%;
-    color: rgb(226, 226, 226);
-}
-
-.Matches {
-    position: absolute;
-    top: 15%;
-    left: 30px;
-    font-size: 140%;
-    color: rgb(190, 190, 190);
-}
-
-.Wins {
-    position: absolute;
-    top: 22%;
-    left: 33px;
-    font-size: 140%;
-    color: rgb(190, 190, 190);
-}
-
-.Loses {
-    position: absolute;
-    top: 29%;
-    left: 33px;
-    font-size: 140%;
-    color: rgb(190, 190, 190);
-}
-
-.Hours {
-    position: absolute;
-    top: 36%;
-    left: 33px;
-    font-size: 140%;
-    color: rgb(190, 190, 190);
-}
-
-.MMR {
-    position: absolute;
-    top: 43%;
-    left: 31px;
-    font-size: 140%;
-    color: rgb(190, 190, 190);
-}
-
-.RankImg {
-    position: absolute;
-    top: 49%;
-    left: 29%;
-    height: 46px;
-    width: 46px;
-    margin-top: -23px;
-    margin-left: -23px;
-    background-size: 114%;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 1px 1px 3px 1px #000;
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    opacity: 0.8;
-    transition: 0.5s;
-}
-
-.RankImg:hover {
-    background-size: 120%;
-    border: 1px solid rgb(255, 35, 110);
-    box-shadow: 1px 1px 10px 0px rgba(255, 0, 0, 0.69);
-    opacity: 1;
-    transition: 0.3s;
-}
-
-.InGameDate {
-    position: absolute;
-    top: 15%;
-    left: 266px;
-    font-size: 140%;
-    color: rgb(190, 190, 190);
-}
-
-.WinStreak {
-    position: absolute;
-    top: 22%;
-    left: 266px;
-    font-size: 140%;
-    color: rgb(190, 190, 190);
-}
-
-.WinRate {
-    position: absolute;
-    top: 29%;
-    left: 265px;
-    font-size: 140%;
-    color: rgb(190, 190, 190);
-}
-
-.BattleCups {
-    position: absolute;
-    top: 36%;
-    left: 264px;
-    font-size: 140%;
-    color: rgb(190, 190, 190);
-}
-
-.MainHeroesText {
-    position: absolute;
-    top: 43%;
-    left: 265px;
-    font-size: 140%;
-    color: rgb(190, 190, 190);
-}
-
-.MainH {
-    position: absolute;
-    top: 57%;
-    height: 50px;
-    width: 70px;
-    margin-top: -25px;
-    margin-left: -35px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 1px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 117%;
-    border: 1px solid rgb(10, 10, 10);
-    filter: brightness(70%);
-    opacity: 1;
-    transition: 0.5s;
-}
-
-.MainH:hover {
-    border: 1px solid rgb(255, 35, 110);
-    box-shadow: 1px 1px 10px 0px rgba(255, 0, 0, 0.69);
-    border-radius: 5px;
+.Person:hover {
+    box-shadow: 4px 4px 0px 0px rgb(50, 220, 50);
+    transform: translate(0px, -2%) scale(101%);
     filter: brightness(100%);
-    opacity: 1;
-    transition: 0.2s;
 }
 
-.MH1_1 {
-    left: 59%;
-    background-image: url(img/Heroes/Invoker.png);
-}
-
-.MH1_2 {
-    left: 74%;
-    background-image: url(img/Heroes/Meepo.png);
-}
-
-.MH1_3 {
-    left: 89%;
-    background-image: url(img/Heroes/Anti-Mage.png);
-}
-
-.MH2_1 {
-    left: 59%;
-    background-image: url(img/Heroes/Techies.png);
-}
-
-.MH2_2 {
-    left: 74%;
-    background-image: url(img/Heroes/Undying.png);
-}
-
-.MH2_3 {
-    left: 89%;
-    background-image: url(img/Heroes/Shadow_Shaman.png);
-}
-
-.MH3_1 {
-    left: 59%;
-    background-image: url(img/Heroes/Clinkz.png);
-}
-
-.MH3_2 {
-    left: 74%;
-    background-image: url(img/Heroes/Pugna.png);
-}
-
-.MH3_3 {
-    left: 89%;
-    background-image: url(img/Heroes/Timbersaw.png);
-}
-
-.MH4_1 {
-    left: 59%;
-    background-image: url(img/Heroes/Arc_Wagner.png);
-}
-
-.MH4_2 {
-    left: 74%;
-    background-image: url(img/Heroes/Naga_Siren.png);
-}
-
-.MH4_3 {
-    left: 89%;
-    background-image: url(img/Heroes/HoodWink.png);
-}
-
-.MH5_1 {
-    left: 59%;
-    background-image: url(img/Heroes/Naga_Siren.png);
-}
-
-.MH5_2 {
-    left: 74%;
-    background-image: url(img/Heroes/Riki.png);
-}
-
-.MH5_3 {
-    left: 89%;
-    background-image: url(img/Heroes/Lion.png);
-}
-
-.hr1 {
+.Person.dark {
+    margin: 0 20px 50px;
     position: relative;
-    top: 53%;
-    height: 2px;
-    width: 60%;
-    border: none;
-    background-color: rgba(7, 7, 7, 0.8);
+    height: 420px;
+    width: 560px;
+    border: 1px solid black;
+    border-radius: 20px;
+    filter: brightness(60%);
+    box-shadow: 0px 0px 0px 0px rgb(0, 0, 0);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.4s;
 }
 
-.NetWork {
+.Person.dark:hover {
+    box-shadow: 4px 4px 0px 0px rgb(100, 50, 220);
+    transform: translate(0px, -2%) scale(101%);
+    filter: brightness(100%);
+}
+
+.I1 {
+    background-image: url(img/ArcWagner/2B.png);
+}
+
+.I2 {
+    background-image: url(img/Vi/3B.png);
+}
+
+.I3 {
+    background-image: url(img/YUN1/6B.png);
+}
+
+.I4 {
+    background-image: url(img/BBG.png);
+    background-size: 160%;
+}
+
+.I5 {
+    background-image: url(img/Dead/1B.png);
+}
+
+.I6 {
+    background-image: url(img/YounGGSalt/2B.png);
+}
+
+.InIMG {
     position: absolute;
-    top: 89%;
+    top: 50px;
+    left: 50%;
+    height: 180px;
+    width: 180px;
+    margin-top: -91px;
+    margin-left: -91px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 100%;
+    background-size: 140%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.iI1 {
+    background-image: url(img/ArcWagner/2.png);
+}
+
+.iI2 {
+    background-image: url(img/Vi/3.png);
+}
+
+.iI3 {
+    background-image: url(img/YUN1/6.png);
+}
+
+.iI4 {
+    background-image: url(img/1x1.png);
+    background-size: 100%;
+}
+
+.iI5 {
+    background-image: url(img/Dead/1.png);
+}
+
+.iI6 {
+    background-image: url(img/YounGGSalt/2.png);
+}
+
+.Cbt {
+    position: absolute;
+    top: -40px;
+    right: 5px;
     height: 60px;
     width: 60px;
     margin-top: -30px;
     margin-left: -30px;
-    border-radius: 100%;
-    font-size: 240%;
+    z-index: 2;
     color: black;
-    border: 2px solid rgb(0, 0, 0);
-    opacity: 0.7;
-    transition: 0.3s;
-}
-
-.NetWork:hover {
-    font-size: 240%;
-    opacity: 1;
-    transition: 0.4s;
-}
-
-.NW1 {
-    left: 35%;
-    animation: BGGrad 6s ease infinite;
-    background: linear-gradient(-45deg, 
-    rgb(25, 80, 252), rgb(0, 100, 190), rgb(0, 120, 190), rgb(0, 100, 190), rgb(25, 80, 250));
-    background-size: 200%;
-}
-
-.NW2 {
-    left: 50%;
-    animation: BGGrad 6s ease infinite;
-    background: linear-gradient(-45deg, 
-    rgb(25, 160, 250), rgb(0, 180, 190), rgb(0, 200, 200), rgb(0, 180, 190), rgb(25, 160, 250));
-    background-size: 200%;
-
-}
-
-.NW3 {
-    left: 65%;
-    animation: BGGrad 6s ease infinite;
-    background: linear-gradient(-45deg, 
-    rgb(25, 250, 160), rgb(0, 230, 100), rgb(0, 200, 80), rgb(0, 230, 100), rgb(25, 250, 160));
-    background-size: 200%;
-
-}
-
-@keyframes BGGrad {
-    0% {
-        background-position: 0 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0 50%;
-    }
-}
-
-#Matches1 {
-    position: absolute;
-    top: 15%;
-    left: 30%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Wins1 {
-    position: absolute;
-    top: 22%;
-    left: 23%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Loses1 {
-    position: absolute;
-    top: 29%;
-    left: 24%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Hours1 {
-    position: absolute;
-    top: 36%;
-    left: 24.5%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#InGameDate1 {
-    position: absolute;
-    top: 15%;
-    left: 68%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#MMR1 {
-    position: absolute;
-    top: 50.5%;
-    left: 18%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#WinStreak1 {
-    position: absolute;
-    top: 22%;
-    left: 79%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#WinRate1 {
-    position: absolute;
-    top: 29%;
-    left: 76.5%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#BattleCups1 {
-    position: absolute;
-    top: 36%;
-    left: 81%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Matches2 {
-    position: absolute;
-    top: 15%;
-    left: 30%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Wins2 {
-    position: absolute;
-    top: 22%;
-    left: 23%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Loses2 {
-    position: absolute;
-    top: 29%;
-    left: 24%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Hours2 {
-    position: absolute;
-    top: 36%;
-    left: 24.5%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#InGameDate2 {
-    position: absolute;
-    top: 15%;
-    left: 68%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#MMR2 {
-    position: absolute;
-    top: 50.5%;
-    left: 18%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#WinStreak2 {
-    position: absolute;
-    top: 22%;
-    left: 79%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#WinRate2 {
-    position: absolute;
-    top: 29%;
-    left: 76.5%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#BattleCups2 {
-    position: absolute;
-    top: 36%;
-    left: 81%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Matches3 {
-    position: absolute;
-    top: 15%;
-    left: 30%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Wins3 {
-    position: absolute;
-    top: 22%;
-    left: 23%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Loses3 {
-    position: absolute;
-    top: 29%;
-    left: 24%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Hours3 {
-    position: absolute;
-    top: 36%;
-    left: 24.5%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#InGameDate3 {
-    position: absolute;
-    top: 15%;
-    left: 68%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#MMR3 {
-    position: absolute;
-    top: 50.5%;
-    left: 18%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#WinStreak3 {
-    position: absolute;
-    top: 22%;
-    left: 79%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#WinRate3 {
-    position: absolute;
-    top: 29%;
-    left: 76.5%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#BattleCups3 {
-    position: absolute;
-    top: 36%;
-    left: 81%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Matches4 {
-    position: absolute;
-    top: 15%;
-    left: 30%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Wins4 {
-    position: absolute;
-    top: 22%;
-    left: 23%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Loses4 {
-    position: absolute;
-    top: 29%;
-    left: 24%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Hours4 {
-    position: absolute;
-    top: 36%;
-    left: 24.5%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#InGameDate4 {
-    position: absolute;
-    top: 15%;
-    left: 68%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#MMR4 {
-    position: absolute;
-    top: 50.5%;
-    left: 18%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#WinStreak4 {
-    position: absolute;
-    top: 22%;
-    left: 79%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#WinRate4 {
-    position: absolute;
-    top: 29%;
-    left: 76.5%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#BattleCups4 {
-    position: absolute;
-    top: 36%;
-    left: 81%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Matches5 {
-    position: absolute;
-    top: 15%;
-    left: 30%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Wins5 {
-    position: absolute;
-    top: 22%;
-    left: 23%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Loses5 {
-    position: absolute;
-    top: 29%;
-    left: 24%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#Hours5 {
-    position: absolute;
-    top: 36%;
-    left: 24.5%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#InGameDate5 {
-    position: absolute;
-    top: 15%;
-    left: 68%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#MMR5 {
-    position: absolute;
-    top: 50.5%;
-    left: 18%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#WinStreak5 {
-    position: absolute;
-    top: 22%;
-    left: 79%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#WinRate5 {
-    position: absolute;
-    top: 29%;
-    left: 76.5%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-#BattleCups5 {
-    position: absolute;
-    top: 36%;
-    left: 81%;
-    font-size: 140%;
-    color: rgb(220, 220, 220);
-    text-decoration: underline;
-}
-
-.fa-chevron-down {
-    position: relative;
-    top: 16%;
-}
-
-.UpdateDateBt1 {
-    position: absolute;
-    top: 68%;
-    left: 50%;
-    height: 40px;
-    width: 40px;
-    margin-top: -20px;
-    margin-left: -20px;
-    border: 1px solid rgba(0, 0, 0, 0);
+    font-size: 300%;
+    border: none;
+    box-shadow: none;
     border-radius: 100%;
-    background-color: rgb(10, 10, 10);
-    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    color: rgb(220, 220, 220);
-    font-size: 140%;
-    transition: 0.3s;
-}
-
-.UpdateDateBt1:hover,
-.UpdateDateBt1.hover {
-    border: 1px solid rgb(250, 25, 75);
-    background-color: rgb(10, 10, 10);
-    box-shadow: 0px 0px 4px 3px rgba(255, 25, 25, 0.6);
-    text-align: center;
-    color: rgb(250, 25, 75);
-    font-size: 140%;
-    transition: 0.4s;
-}
-
-.UpdateDate1 {
-    position: relative;
-    top: 52%;
-    color: rgb(220, 220, 220);
-    font-size: 0%;
-    cursor: default;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
     opacity: 0;
-    transition: 0.2s;
 }
 
-.UpdateDate1.cl {
-    position: relative;
-    top: 53%;
-    font-size: 100%;
-    opacity: 1;
-    transition: 0.2s;
-}
-
-.UpdateDateBt2 {
-    position: absolute;
-    top: 68%;
-    left: 50%;
-    height: 40px;
-    width: 40px;
-    margin-top: -20px;
-    margin-left: -20px;
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 100%;
-    background-color: rgb(10, 10, 10);
-    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    color: rgb(220, 220, 220);
-    font-size: 140%;
-    transition: 0.3s;
-}
-
-.UpdateDateBt2:hover {
-    border: 1px solid rgb(250, 25, 75);
-    background-color: rgb(10, 10, 10);
-    box-shadow: 0px 0px 4px 3px rgba(255, 25, 25, 0.6);
-    text-align: center;
-    color: rgb(250, 25, 75);
-    font-size: 140%;
-    transition: 0.4s;
-}
-
-.UpdateDate2 {
-    position: relative;
-    top: 52%;
-    color: rgb(220, 220, 220);
-    font-size: 0%;
-    cursor: default;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    opacity: 0;
-    transition: 0.2s;
-}
-
-.UpdateDate2.cl {
-    position: relative;
-    top: 53%;
-    font-size: 100%;
-    opacity: 1;
-    transition: 0.2s;
-}
-
-.UpdateDateBt3 {
-    position: absolute;
-    top: 68%;
-    left: 50%;
-    height: 40px;
-    width: 40px;
-    margin-top: -20px;
-    margin-left: -20px;
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 100%;
-    background-color: rgb(10, 10, 10);
-    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    color: rgb(220, 220, 220);
-    font-size: 140%;
-    transition: 0.3s;
-}
-
-.UpdateDateBt3:hover {
-    border: 1px solid rgb(250, 25, 75);
-    background-color: rgb(10, 10, 10);
-    box-shadow: 0px 0px 4px 3px rgba(255, 25, 25, 0.6);
-    text-align: center;
-    color: rgb(250, 25, 75);
-    font-size: 140%;
-    transition: 0.4s;
-}
-
-.UpdateDate3 {
-    position: relative;
-    top: 52%;
-    color: rgb(220, 220, 220);
-    font-size: 0%;
-    cursor: default;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    opacity: 0;
-    transition: 0.2s;
-}
-
-.UpdateDate3.cl {
-    position: relative;
-    top: 53%;
-    font-size: 100%;
-    opacity: 1;
-    transition: 0.2s;
-}
-
-.UpdateDateBt4 {
-    position: absolute;
-    top: 68%;
-    left: 50%;
-    height: 40px;
-    width: 40px;
-    margin-top: -20px;
-    margin-left: -20px;
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 100%;
-    background-color: rgb(10, 10, 10);
-    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    color: rgb(220, 220, 220);
-    font-size: 140%;
-    transition: 0.3s;
-}
-
-.UpdateDateBt4:hover {
-    border: 1px solid rgb(250, 25, 75);
-    background-color: rgb(10, 10, 10);
-    box-shadow: 0px 0px 4px 3px rgba(255, 25, 25, 0.6);
-    text-align: center;
-    color: rgb(250, 25, 75);
-    font-size: 140%;
-    transition: 0.4s;
-}
-
-.UpdateDate4 {
-    position: relative;
-    top: 52%;
-    color: rgb(220, 220, 220);
-    font-size: 0%;
-    cursor: default;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    opacity: 0;
-    transition: 0.2s;
-}
-
-.UpdateDate4.cl {
-    position: relative;
-    top: 53%;
-    font-size: 100%;
-    opacity: 1;
-    transition: 0.2s;
-}
-
-.UpdateDateBt5 {
-    position: absolute;
-    top: 68%;
-    left: 50%;
-    height: 40px;
-    width: 40px;
-    margin-top: -20px;
-    margin-left: -20px;
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 100%;
-    background-color: rgb(10, 10, 10);
-    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    color: rgb(220, 220, 220);
-    font-size: 140%;
-    transition: 0.3s;
-}
-
-.UpdateDateBt5:hover {
-    border: 1px solid rgb(250, 25, 75);
-    background-color: rgb(10, 10, 10);
-    box-shadow: 0px 0px 4px 3px rgba(255, 25, 25, 0.6);
-    text-align: center;
-    color: rgb(250, 25, 75);
-    font-size: 140%;
-    transition: 0.4s;
-}
-
-.UpdateDate5 {
-    position: relative;
-    top: 52%;
-    color: rgb(220, 220, 220);
-    font-size: 0%;
-    cursor: default;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    opacity: 0;
-    transition: 0.2s;
-}
-
-.UpdateDate5.cl {
-    position: relative;
-    top: 53%;
-    font-size: 100%;
-    opacity: 1;
-    transition: 0.2s;
-}
-
-#Hint {
-    position: fixed;
-    top: 85%;
-    left: 50%;
-    height: 0px;
-    width: 0px;
-    margin-top: 0px;
-    margin-left: 0px;
-    backdrop-filter: blur(20px);
-    background-color: rgba(0, 0, 0, 0.6);
-    border: none;
-    border-radius: 10px;
-    text-align: center;
-    z-index: -20;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-#Hint.cl {
-    top: 85%;
-    height: 50px;
-    width: 130px;
-    margin-top: -25px;
-    margin-left: -65px;
-    z-index: 50;
-    opacity: 1;
-    transition: 0.2s;
-}
-
-#HintMT {
-    position: relative;
-    top: -7%;
-    color: rgb(200, 200, 200);
-    font-size: 100%;
-    font-weight: 100;
-}
-
-.closebt {
-    position: absolute;
-    top: 6%;
-    left: 92%;
-    height: 40px;
-    width: 40px;
-    margin-top: -20px;
-    margin-left: -20px;
-    border-radius: 10px;
-    border: none;
-    color: rgb(54, 54, 54);
-    padding-top: 3px;
-    font-size: 170%;
-    background-color: rgba(29, 29, 29, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0);
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.6);
-    z-index: 1;
-    transition: 0.4s;
-}
-
-.closebt:hover {
-    color: rgba(255, 40, 85, 0.6);
-    background-color: rgba(29, 29, 29, 0.8);
-    border: 1px solid rgba(255, 40, 85, 0.6);
-    box-shadow: 0px 0px 20px 1px rgba(255, 35, 35, 0.4);
-    transition: 0.2s;
-}
-
-.remakebt {
-    position: absolute;
-    top: 6%;
-    left: 82%;
-    height: 40px;
-    width: 40px;
-    margin-top: -20px;
-    margin-left: -20px;
-    border-radius: 10px;
-    border: none;
-    color: rgb(54, 54, 54);
-    padding-top: 3px;
-    font-size: 170%;
-    background-color: rgba(29, 29, 29, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0);
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.6);
-    z-index: 1;
-    transition: 0.4s;
-}
-
-.remakebt:hover,
-.remakebt.hover {
-    color: rgba(255, 40, 85, 0.6);
-    background-color: rgba(29, 29, 29, 0.8);
-    border: 1px solid rgba(255, 40, 85, 0.6);
-    box-shadow: 0px 0px 20px 1px rgba(255, 35, 35, 0.4);
-    transition: 0.2s;
-}
-
-#loadscr {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(5, 5, 5);
-    text-align: center;
-    z-index: 99;
-    opacity: 1;
-}
-
-#loadscr.cl {
-    z-index: -20;
-    opacity: 0;
-    transition: 1s;
-}
-
-@keyframes loading {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0.8;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-.LoadText {
-    position: relative;
-    top: 38%;
-    font-size: 280%;
-    text-transform: uppercase;
-    background: linear-gradient(-45deg, 
-    rgb(255, 255, 255), rgb(255, 255, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200%;
-    animation: loading 1s ease infinite;
-    text-shadow: none;
-    cursor: default;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    opacity: 1;
-}
-
-.LoadText.cl {
-    animation: none;
-    opacity: 0;
-    transition: 1s;
-}
-
-.LoadText.cl1 {
-    text-transform: uppercase;
-    background: linear-gradient(-45deg, 
-    rgb(220, 0, 70), rgb(220, 0, 70));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200%;
-    text-shadow: none;
-    animation: none;
-    font-size: 240%;
-    transition: 0.4s;
-}
-
-@keyframes gr2 {
-    0% {
-        background-position: 100% 50%;
-    }
-
-    50% {
-        background-position: 0 50%;
-    }
-
-    60% {
-        background-position: 100% 50%;
-    }
-
-    80% {
-        background-position: 100% 50%;
-    }
-
-    90% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 100% 50%;
-    }
-}
-
-.loading {
-    position: relative;
-    top: 35%;
-    left: 50%;
-    height: 6px;
-    width: 0px;
-    margin-top: -3px;
-    margin-left: -100px;
-    background: linear-gradient(-45deg,
-    rgb(220, 0, 70),black);
-    animation: gr2 3s ease;
-    background-size: 200%;
-    border-radius: 6px;
-    border: none;
-}
-
-.dataupdatebt {
-    position: absolute;
-    top: 6%;
-    left: 72%;
-    height: 40px;
-    width: 40px;
-    margin-top: -20px;
-    margin-left: -20px;
-    border-radius: 10px;
-    border: none;
-    color: rgb(54, 54, 54);
-    padding-top: 3px;
-    font-size: 170%;
-    background-color: rgba(29, 29, 29, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0);
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.6);
-    z-index: 1;
-    transition: 0.4s;
-}
-
-.dataupdatebt:hover,
-.dataupdatebt.hover {
-    color: rgba(255, 40, 85, 0.6);
-    background-color: rgba(29, 29, 29, 0.8);
-    border: 1px solid rgba(255, 40, 85, 0.6);
-    box-shadow: 0px 0px 20px 1px rgba(255, 35, 35, 0.4);
-    transition: 0.2s;
-}
-
-#PSB {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(8px);
-    opacity: 0;
-    z-index: -20;
-    transition: 0s;
-}
-
-#PSB.cl {
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-    opacity: 1;
-    z-index: 20;
-    transition: 0s;
-}
-
-.passwordDiv {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 120px;
-    width: 220px;
-    margin-top: -60px;
-    margin-left: -110px;
-    border: 1px solid rgb(220, 0, 70);
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 10px 3px rgba(255, 0, 0, 0.4);
-    overflow: hidden;
-}
-
-#password {
-    position: absolute;
-    top: 30%;
-    left: 90px;
-    height: 40px;
-    width: 150px;
-    margin-top: -20px;
-    margin-left: -75px;
-    border: 1px solid rgba(0, 0, 0, 0);
-    outline: none;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
-    color: rgb(220, 0, 70);
-    font-size: 180%;
-    text-align: center;
-    transition: 0.4s;
-}
-
-#password.cl {
-    font-size: 150%;
-    transition: 0.1s;
-}
-
-#password:hover {
-    border: 1px solid rgb(220, 0, 70);
-    background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 2px 2px 5px 1px rgba(255, 0, 0, 0.5);
-    transition: 0.2s;
-}
-
-#password:focus {
-    border: 1px solid rgb(220, 0, 70);
-    background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 2px 2px 5px 1px rgba(255, 0, 0, 0.5);
-    transition: 0.2s;
-}
-
-#passwordstatbt {
-    position: absolute;
-    top: 18%;
-    left: 78%;
-    border-radius: 10px;
-    border: none;
-    color: rgb(54, 54, 54);
-    background-color: rgba(0, 0, 0, 0);
-    padding-top: 3px;
-    font-size: 140%;
-    z-index: 1;
-    transition: 0.4s;
-}
-
-#passwordstatbt:hover {
-    color: rgba(255, 40, 85, 0.6);
-    transition: 0s;
-}
-
-#passwordstatbt.hover {
-    left: 80%;
-    color: rgba(255, 40, 85, 0.6);
-    transition: 0s;
-}
-
-#cancel {
-    position: absolute;
-    top: 55%;
-    left: 20%;
-    border-radius: 10px;
-    border: none;
-    color: rgb(54, 54, 54);
-    background-color: rgba(0, 0, 0, 0);
-    padding-top: 3px;
-    font-size: 240%;
-    z-index: 1;
-    transition: 0.4s;
-}
-
-#cancel:hover {
-    color: rgba(255, 40, 85, 0.6);
-    transition: 0.2s;
-}
-
-#enter {
-    position: absolute;
-    top: 55%;
-    left: 60%;
-    border-radius: 10px;
-    border: none;
-    color: rgb(54, 54, 54);
-    background-color: rgba(0, 0, 0, 0);
-    padding-top: 3px;
-    font-size: 240%;
-    z-index: 1;
-    transition: 0.4s;
-}
-
-#enter:hover {
-    color: rgba(255, 40, 85, 0.6);
-    transition: 0.2s;
-}
-
-.CB {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(8px);
-    opacity: 1;
-    z-index: -20;
-    transition: 0s;
-}
-
-.CB.cl {
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-    opacity: 1;
-    z-index: 20;
-    transition: 0s;
-}
-
-.ChangesDiv {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 450px;
-    width: 400px;
-    margin-top: -225px;
-    margin-left: -200px;
-    border-radius: 30px;
-    text-align: center;
-    backdrop-filter: blur(8px);
-    background-color: rgba(14, 14, 14, 0.8);
-    background-repeat: no-repeat;
-    background-size: 250%;
-    background-position: center;
-    overflow: hidden;
-}
-
-.CMatches {
-    position: relative;
-    top: 4.5%;
-    right: 18%;
-    font-size: 120%;
-    text-align: center;
-}
-
-.CWins {
-    position: relative;
-    top: -5%;
-    left: 18%;
-    font-size: 120%;
-    text-align: center;
-}
-
-.CHours {
-    position: relative;
-    top: 8%;
-    right: 18%;
-    font-size: 120%;
-    text-align: center;
-}
-
-.CWinStreak {
-    position: relative;
-    top: -10.5%;
-    left: 18%;
-    font-size: 120%;
-    text-align: center;
-}
-
-.CMMR {
-    position: relative;
-    top: 18.5%;
-    font-size: 120%;
-    text-align: center;
-}
-
-.inp {
-    position: absolute;
-    height: 34px;
-    width: 120px;
-    margin-top: -17px;
-    margin-left: -60px;
-    border: none;
-    outline: none;
-    color: white;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: 0.4s;
-}
-
-.inp:hover {
-    border: 1px solid rgb(220, 0, 70);
-    background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 2px 2px 5px 1px rgba(255, 0, 0, 0.5);
-    transition: 0.2s;
-}
-
-.inp:focus {
-    border: 1px solid rgb(220, 0, 70);
-    background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 2px 2px 5px 1px rgba(255, 0, 0, 0.5);
-    transition: 0.2s;
-}
-
-.Closebt {
-    position: absolute;
-    top: 75%;
-    left: 25%;
-    border-radius: 5px;
-    border: none;
-    color: rgb(54, 54, 54);
-    background-color: rgba(0, 0, 0, 0);
-    padding-top: 3px;
-    font-size: 140%;
-    border: 1px solid rgba(0, 0, 0, 0);
-    z-index: 1;
-    transition: 0.4s;
-}
-
-.Closebt:hover {
-    border: 1px solid rgba(220, 0, 70);
-    color: rgba(255, 40, 85, 0.6);
-    transition: 0.2s;
-}
-
-.Changebt {
-    position: absolute;
-    top: 75%;
-    left: 55%;
-    border-radius: 5px;
-    border: none;
-    color: rgb(54, 54, 54);
-    background-color: rgba(0, 0, 0, 0);
-    padding-top: 3px;
-    font-size: 140%;
-    border: 1px solid rgba(0, 0, 0, 0);
-    z-index: 1;
-    transition: 0.4s;
-}
-
-.Changebt:hover {
-    border: 1px solid rgba(220, 0, 70);
-    color: rgba(255, 40, 85, 0.6);
-    transition: 0.2s;
-}
-
-.ICMatches {
-    top: 20%;
-    left: 32.5%;
-}
-
-.ICWins {
-    top: 20%;
-    left: 67.5%;
-}
-
-.ICHours {
-    top: 42.5%;
-    left: 32.5%;
-}
-
-.ICWinStreak {
-    top: 42.5%;
-    left: 67.5%;
-}
-
-.ICMMR {
-    top: 62%;
-    left: 50%;
-}
-
-.Discord {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 100%;
-    width: 100%;
-    margin-top: -25px;
-    margin-left: -25px;
-    border-radius: 15px;
-    border: 3px solid rgb(0, 100, 190);
-    color: rgb(0, 100, 190);
-    background-color: rgba(0, 0, 0, 0);
-    /* border: none;
+.Cbt:hover {
     color: black;
-    animation: BGGrad 6s ease infinite;
-    background: linear-gradient(-45deg, 
-    rgb(25, 80, 252), rgb(0, 100, 190), rgb(0, 120, 190), rgb(0, 100, 190), rgb(25, 80, 250));
-    background-size: 200%; */
-    opacity: 0.8;
-    font-size: 160%;
-    box-shadow: 0px 0px 5px 2px rgb(0, 0, 0);
-    transition: 0.4s;
-}
-
-.Discord:hover {
     opacity: 1;
-    transition: 0.2s;
-}
-
-.confidence {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    height: 20px;
-    width: 20px;
-    margin-top: -10px;
-    margin-left: -10px;
     border: none;
-    border-radius: 5px;
-    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.6);
-    background-color: rgba(0, 128, 0, 0);
-    overflow: hidden;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.MainBody {
-    position: absolute;
+.Cbt:active {
+    opacity: 0;
+}
+
+.Cbt.cl:hover {
+    color: black;
+    opacity: 1;
+    border: none;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.Cbt.cl:active {
+    opacity: 0;
+}
+
+.Cbt.cl {
     top: 40px;
-    left: 40px;
-    /* left: 50%; */
+    opacity: 0.6;
+}
+
+.NetWorks {
+    position: relative;
+    top: 15%;
+    left: -61px;
+    height: 56px;
+    width: 56px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-size: 180%;
+    transition: all 0.4s;
+}
+
+.NetWorks.dark {
+    color: rgb(100, 50, 220);
+    border: 1px solid rgb(100, 50, 220);
+    background-color: rgba(100, 50, 220, 0);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-size: 180%;
+    box-shadow: 0px 0px 5px 1px rgb(100, 50, 220, 0.7);
+    transition: all 0.4s;
+}
+
+.NetWorks.dark:hover {
+    color: black;
+    background-color: rgb(100, 50, 220);
+    box-shadow: 0px 0px 8px 1px rgb(100, 50, 220);
+}
+
+.Theme {
+    position: relative;
+    top: 22%;
+    left: -121px;
+    height: 56px;
+    width: 56px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-size: 180%;
+    transition: all 0.4s;
+}
+
+.Theme.dark {
+    color: rgb(100, 50, 220);
+    border: 1px solid rgb(100, 50, 220);
+    background-color: rgba(100, 50, 220, 0);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-size: 180%;
+    box-shadow: 0px 0px 5px 1px rgb(100, 50, 220, 0.7);
+    transition: all 0.4s;
+}
+
+.Theme.dark:hover {
+    color: black;
+    background-color: rgb(100, 50, 220);
+    box-shadow: 0px 0px 8px 1px rgb(100, 50, 220);
+}
+
+.NWBody {
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    height: 60px;
+    width: 240px;
+    margin-top: -30px;
+    margin-left: -120px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 0, 0.5);
+    opacity: 0;
+    z-index: -2;
+    transition: all 0.4s;
+}
+
+.NWBody.dark {
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    height: 60px;
+    width: 240px;
+    margin-top: -30px;
+    margin-left: -120px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(12, 12, 12);
+    box-shadow: 0px 0px 30px 1px rgba(76, 0, 255, 0.5);
+    opacity: 0;
+    z-index: -2;
+    transition: all 0.4s;
+}
+
+.NWBody.cl {
+    opacity: 1;
+    top: 90%;
+    z-index: 5;
+}
+
+.underLine {
+    position: relative;
+    bottom: -54px;
+    height: 6px;
+    width: 100%;
+    background-color: rgb(50, 220, 50);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transition: all 0.4s;
+}
+
+.underLine.dark {
+    position: relative;
+    bottom: -54px;
+    height: 6px;
+    width: 100%;
+    background-color: rgb(100, 50, 220);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.Name {
+    position: relative;
+    top: 20%;
+}
+
+.RoleDiv {
+    position: absolute;
+    top: 21%;
+    left: 64%;
     height: 50px;
     width: 50px;
     margin-top: -25px;
     margin-left: -25px;
-    z-index: 10;
-    border-radius: 15px;
-    overflow: hidden;
+    text-align: center;
+    border: 2px solid rgb(10, 10, 10);
+    background-color: rgb(30, 30, 30);
+    border-radius: 100%;
 }
 
-.CF1 {
-    background-color: rgba(50, 255, 101, 0.9);
-}
-
-.CF2 {
-    background-color: rgba(50, 255, 101, 0.9);
-}
-
-.CF3 {
-    background-color: rgba(50, 255, 101, 0.9);
-}
-
-.CF4 {
-    background-color: rgba(50, 255, 101, 0.9);
-}
-
-.CF5 {
-    background-color: rgba(50, 255, 101, 0.9);
-    /* background-color: rgba(255, 255, 50, 0.9); */
-}
-
-.CF_OK {
-    color: black;
-    font-size: 100%;
-    position: absolute;
-    top: 10%;
-    left: 9%;
-}
-
-.CF_NO {
-    color: black;
-    font-size: 100%;
-    position: absolute;
-    top: 10%;
-    left: 9%;
+.Role {
+    position: relative;
+    top: -25%;
 }
