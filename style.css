@@ -99,12 +99,12 @@ button:hover {
 .Place {
     position: relative;
     overflow: hidden;
-    height: 1080px;
     width: 100%;
     z-index: 4;
 }
 
 .PL1 {
+    height: 1080px;
     background-color: rgb(220, 220, 220);
     transition: all 0.4s;
 }
@@ -114,7 +114,7 @@ button:hover {
 }
 
 .OCbt {
-    position: relative;
+    position: absolute;
     top: 8%;
     left: -1px;
     height: 56px;
@@ -227,7 +227,7 @@ button:hover {
 }
 
 .I4 {
-    background-image: url(img/BBG.png);
+    background-image: url(img/Ruina/1B.png);
     background-size: 160%;
 }
 
@@ -268,8 +268,7 @@ button:hover {
 }
 
 .iI4 {
-    background-image: url(img/1x1.png);
-    background-size: 100%;
+    background-image: url(img/Ruina/1.png);
 }
 
 .iI5 {
@@ -327,9 +326,9 @@ button:hover {
 }
 
 .NetWorks {
-    position: relative;
+    position: absolute;
     top: 15%;
-    left: -61px;
+    left: -1px;
     height: 56px;
     width: 56px;
     border-top-left-radius: 0px;
@@ -356,9 +355,9 @@ button:hover {
 }
 
 .Theme {
-    position: relative;
+    position: absolute;
     top: 22%;
-    left: -121px;
+    left: -1px;
     height: 56px;
     width: 56px;
     border-top-left-radius: 0px;
@@ -384,9 +383,42 @@ button:hover {
     box-shadow: 0px 0px 8px 1px rgb(100, 50, 220);
 }
 
+.Chat {
+    position: absolute;
+    top: 32%;
+    left: -1px;
+    height: 56px;
+    width: 56px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-size: 180%;
+    transition: all 0.4s;
+}
+
+.Chat.dark {
+    color: rgb(100, 50, 220);
+    border: 1px solid rgb(100, 50, 220);
+    background-color: rgba(100, 50, 220, 0);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-size: 180%;
+    box-shadow: 0px 0px 5px 1px rgb(100, 50, 220, 0.7);
+    transition: all 0.4s;
+}
+
+.Chat.dark:hover {
+    color: black;
+    background-color: rgb(100, 50, 220);
+    box-shadow: 0px 0px 8px 1px rgb(100, 50, 220);
+}
+
 .NWBody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     position: fixed;
-    top: 100%;
+    top: 95%;
     left: 50%;
     height: 60px;
     width: 240px;
@@ -403,7 +435,7 @@ button:hover {
 
 .NWBody.dark {
     position: fixed;
-    top: 100%;
+    top: 95%;
     left: 50%;
     height: 60px;
     width: 240px;
@@ -447,7 +479,13 @@ button:hover {
 
 .Name {
     position: relative;
-    top: 20%;
+    cursor: default;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: cursive;
+    top: 25%;
 }
 
 .RoleDiv {
@@ -462,9 +500,379 @@ button:hover {
     border: 2px solid rgb(10, 10, 10);
     background-color: rgb(30, 30, 30);
     border-radius: 100%;
+    transition: all 0.3s;
+}
+
+.RoleDiv:hover {
+    color: rgb(50, 220, 50);
+    border: 2px solid rgb(50, 220, 50);
+}
+
+.RoleDiv.dark:hover {
+    color: rgb(100, 50, 220);
+    border: 2px solid rgb(100, 50, 220);
 }
 
 .Role {
     position: relative;
-    top: -25%;
+    top: 3px;
+}
+
+.NWBT {
+    font-size: 140%;
+    margin: 0px 20px;
+    position: absolute;
+    top: 20%;
+    height: 44px;
+    width: 44px;
+    margin-top: -22px;
+    margin-left: -22px;
+}
+
+.NWBT:hover {
+    color: white;
+}
+
+.NWBT.dark {
+    color: rgb(100, 50, 220);
+    border: 1px solid rgb(100, 50, 220);
+    box-shadow: 0px 0px 30px 1px rgb(100, 50, 220, 0.7);
+}
+
+.NWBT.dark:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(100, 50, 220);
+}
+
+.DiscordBt {
+    left: 25%;
+}
+
+.Bt1 {
+    left: 50%;
+}
+
+.Bt2 {
+    left: 75%;
+}
+
+#Hint {
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    width: 220px;
+    padding-top: 12px;
+    margin-left: -90px;
+    font-size: 110%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    background-color: rgb(50, 220, 50);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 20px 1px rgb(50, 220, 50, 0.7);
+    z-index: -2;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: default;
+    font-weight: 600;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: cursive;
+    transition: all 0.4s;
+}
+
+#Hint.dark {
+    color: black;
+    background-color: rgb(100, 50, 220);
+    box-shadow: 0px 0px 20px 1px rgb(100, 50, 220, 0.7);
+    opacity: 0;
+    z-index: -2;
+}
+
+#Hint.cl {
+    top: 80%;
+    opacity: 0.8;
+    z-index: 9999;
+    transition: 0.4s;
+}
+
+.StartText {
+    position: relative;
+    text-align: center;
+    font-size: 800%;
+    font-weight: 900;
+    top: 5%;
+    left: 0%;
+    font-family: cursive;
+    text-transform: uppercase;
+    background: linear-gradient(-45deg, 
+    rgb(220, 220, 220), rgb(50, 220, 50, 0.7), rgb(220, 220, 220));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: gradient 10s ease infinite;
+    text-shadow: none;
+    cursor: default;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+.StartText.dark {
+    position: relative;
+    text-align: center;
+    font-size: 800%;
+    font-weight: 900;
+    top: 5%;
+    left: 0%;
+    font-family: cursive;
+    text-transform: uppercase;
+    background: linear-gradient(-45deg, 
+    rgb(20, 20, 20), rgb(76, 0, 255), rgb(20, 20, 20));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: gradient 10s ease infinite;
+    text-shadow: none;
+    cursor: default;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.LoadingBody {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    opacity: 1;
+    background-color: rgb(20, 20, 20);
+    transition: all 0.4s;
+}
+
+.LoadingBody.cl {
+    z-index: -2;
+    opacity: 0;
+}
+
+@keyframes ldio-2q21ypou2qn {
+    0% { transform: translate(-50%,-50%) rotate(0deg); }
+    100% { transform: translate(-50%,-50%) rotate(360deg); }
+}
+
+.ldio-2q21ypou2qn div {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 10px solid #e7e7e7;
+    border-top-color: transparent;
+    border-radius: 50%;
+}
+
+.ldio-2q21ypou2qn div {
+    animation: ldio-2q21ypou2qn 1s linear infinite;
+    top: 50px;
+    left: 50px
+}
+
+.loadingio-spinner-rolling-nw1f4kj3v3 {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    overflow: hidden;
+    background: #00000000;
+}
+
+.ldio-2q21ypou2qn {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+}
+
+.ldio-2q21ypou2qn div {
+    box-sizing: content-box;
+}
+
+.btn1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 5;
+}
+
+.nocopy {
+    cursor: default;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.CCB {
+    position: absolute;
+    height: 1080px;
+    width: 100%;
+}
+
+.CCR {
+    position: relative;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+.CC {
+    margin: 0px 20px;
+    height: 48%;
+    width: 30%;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(15, 15, 15, 0.9);
+    backdrop-filter: blur(8px);
+}
+
+.steamBt {
+    position: absolute;
+    top: 10%;
+    left: 34%;
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 110%;
+}
+
+.infoBt {
+    position: absolute;
+    top: 21%;
+    left: 37%;
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 110%;
+}
+
+.dataBt {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 120px;
+    margin-left: -60px;
+}
+
+.ICON1 {
+    color: green;
+}
+
+.ICON2 {
+    color: yellow;
+}
+
+.ICON3 {
+    color: red;
+}
+
+.fa-steam {
+    position: relative;
+    top: -53%;
+    left: -177%;
+}
+
+.fa-info-circle {
+    position: relative;
+    top: -50%;
+    left: -180%;
+}
+
+.modal-body {
+    height: 400px;
+}
+
+.textarea {
+    position: relative;
+    top: 130px;
+    left: 2%;
+    height: 260px;
+    width: 96%;
+    margin-top: -130px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(230, 230, 230);
+    border: 2px solid rgb(220, 220, 220);
+    color: rgb(55, 55, 55);
+    resize: none;
+    transition: 0.4s;
+}
+
+.textarea:focus {
+    border: 2px solid rgb(20, 70, 220);
+    transition: 0.4s;
+}
+
+.textarea.cl {
+    border: 2px solid rgb(220, 20, 70);
+    transition: 0.4s;
+}
+
+.textarea.cl1 {
+    border: 2px solid rgb(70, 220, 20);
+    transition: 0.4s;
+}
+
+.textarea-dark {
+    background-color: rgb(20, 20, 20);
+    border: 2px solid rgb(30, 30, 30);
+    color: rgb(200, 200, 200);
+}
+
+.closeBt {
+    position: absolute;
+    top: 83%;
+    left: 35%;
+    width: 100px;
+    margin-left: -50px;
+}
+
+.sendBt {
+    position: absolute;
+    top: 83%;
+    left: 65%;
+    width: 100px;
+    margin-left: -50px;
 }
