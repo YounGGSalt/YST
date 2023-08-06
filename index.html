@@ -4,13 +4,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text</title>
+    <title>YSTeam</title>
     <script src="https://kit.fontawesome.com/9265498b8f.js" crossorigin="anonymous">
     </script>
+    <link rel="shortcut icon" href="img/dota_icon_245524.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/libs/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="LoadingBody">
+        <div class="loadingio-spinner-rolling-nw1f4kj3v3"><div class="ldio-2q21ypou2qn">
+        <div></div>
+        </div></div>
+    </div>
+    <div class="modal fade" id="SB" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+                Send message 
+
+                <i class="fa-regular fa-lightbulb" onmouseover='Hint.classList.add("cl"); MT.innerHTML = "Here you can write a message to the site administration";' onmouseout='Hint.classList.remove("cl");'></i>
+            </h5>
+          </div>
+          <div class="modal-body" id="ModalBody">
+            <p id="messageWords">Text (0/180)</p>
+            <textarea class="textarea" id="MsgInput" cols="30" rows="10" required></textarea>
+            <a class="btn btn-outline-secondary btn-lg closeBt" id="closeBt" href="#" role="button" data-bs-dismiss="modal" aria-label="Close">
+                Cancel
+            </a>
+            <a class="btn btn-outline-primary btn-lg sendBt" id="sendBt" href="#" role="button">
+                Check
+            </a>
+          </div>
+           
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="success" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="successTitle">
+              
+            </h5>
+          </div>
+          <div class="modal-body" id="successBody" style="height: 100px;">
+            
+          </div>
+           
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="SB1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content content-lg">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">
+                Information - akiyara
+              </h5>
+            </div>
+            <div class="modal-body" id="ModalBody">
+              
+            </div>
+             
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="SB2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content content-lg">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">
+                Information - Vi
+              </h5>
+            </div>
+            <div class="modal-body" id="ModalBody">
+              
+            </div>
+             
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="SB3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content content-lg">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">
+                Information - YUN1
+              </h5>
+            </div>
+            <div class="modal-body" id="ModalBody">
+              
+            </div>
+             
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="SB4" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content content-lg">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">
+                Information - Ruina
+              </h5>
+            </div>
+            <div class="modal-body" id="ModalBody">
+              
+            </div>
+             
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="SB5" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content content-lg">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">
+                Information - Dead
+              </h5>
+            </div>
+            <div class="modal-body" id="ModalBody">
+              
+            </div>
+             
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="SB6" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content content-lg">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">
+                Information - YounGGSalt
+              </h5>
+            </div>
+            <div class="modal-body" id="ModalBody">
+              
+            </div>
+             
+          </div>
+        </div>
+      </div>
     <div class="Place PL1">
+        <p class="StartText">
+            YOUNG STARS <br> TEAM
+        </p>
         <button class="squareBt OCbt">
             <i class="fa-solid fa-users-line"></i>
         </button>
@@ -20,90 +159,151 @@
         <button class="squareBt Theme" id="iC">
             <i class="fa-solid fa-sun"></i>
         </button>
+        <button class="squareBt Chat" data-bs-toggle="modal" data-bs-target="#SB">
+            <i class="fa-regular fa-message"></i>
+        </button>
         <button class="Cbt">
             <i class="fa-solid fa-xmark"></i>
         </button>
         <div class="PersonBody">
-            <div class="Person P1 I1">
+            <div class="Person I1">
                 <div class="InIMG iI1">
                 </div>
                 <p class="Name">
                     akiyara
                 </p>
-                <div class="RoleDiv">
+                <div class="RoleDiv" id="RD1">
                     <p class="Role">
                         <i class="fa-solid fa-meteor"></i>
                     </p>
                 </div>
+                <a class="btn btn-dark btn-lg steamBt" href="https://steamcommunity.com/profiles/76561199173543952" role="button">
+                    <i class="fa fa-steam" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-warning btn-lg infoBt" href="#" role="button" data-bs-toggle="modal" data-bs-target="#SB1">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </a>
             </div>
-            <div class="Person P2 I2">
+            <div class="Person I2">
                 <div class="InIMG iI2">
                 </div>
                 <p class="Name">
                     Vi
                 </p>
-                <div class="RoleDiv">
+                <div class="RoleDiv" id="RD2">
                     <p class="Role">
                         <i class="fa-solid fa-hand-holding-heart"></i>
                     </p>
                 </div>
+                <a class="btn btn-dark btn-lg steamBt" href="https://steamcommunity.com/profiles/76561199229387991/" role="button">
+                    <i class="fa fa-steam" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-warning btn-lg infoBt" href="#" role="button" data-bs-toggle="modal" data-bs-target="#SB2">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </a>
             </div>
-            <div class="Person P3 I3">
+            <div class="Person I3">
                 <div class="InIMG iI3">
                 </div>
                 <p class="Name">
                     YUN1
                 </p>
-                <div class="RoleDiv">
+                <div class="RoleDiv" id="RD3">
                     <p class="Role">
                         <i class="fa-solid fa-feather-pointed"></i>
                     </p>
                 </div>
+                <a class="btn btn-dark btn-lg steamBt" href="https://steamcommunity.com/profiles/76561199222434797/" role="button">
+                    <i class="fa fa-steam" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-warning btn-lg infoBt" href="#" role="button" data-bs-toggle="modal" data-bs-target="#SB3">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </a>
             </div>
-            <div class="Person P4 I4">
+            <div class="Person I4">
                 <div class="InIMG iI4">
                 </div>
                 <p class="Name">
                     Ruina
                 </p>
-                <div class="RoleDiv">
+                <div class="RoleDiv" id="RD4">
                     <p class="Role">
-                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <i class="fa-solid fa-shield"></i>
                     </p>
                 </div>
+                <a class="btn btn-dark btn-lg steamBt" href="https://steamcommunity.com/profiles/76561198993627655" role="button">
+                    <i class="fa fa-steam" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-warning btn-lg infoBt" href="#" role="button" data-bs-toggle="modal" data-bs-target="#SB4">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </a>
             </div>
-            <div class="Person P5 I5">
+            <div class="Person I5">
                 <div class="InIMG iI5">
                 </div>
                 <p class="Name">
                     Dead
                 </p>
-                <div class="RoleDiv">
+                <div class="RoleDiv" id="RD5">
                     <p class="Role">
-                        <i class="fa-solid fa-shield"></i>
+                        <i class="fa-solid fa-hand-holding-heart"></i>
                     </p>
                 </div>
+                <a class="btn btn-dark btn-lg steamBt" href="https://steamcommunity.com/profiles/76561199322044878" role="button">
+                    <i class="fa fa-steam" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-warning btn-lg infoBt" href="#" role="button" data-bs-toggle="modal" data-bs-target="#SB5">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </a>
             </div>
-            <div class="Person P6 I6">
+            <div class="Person I6">
                 <div class="InIMG iI6">
                 </div>
                 <p class="Name">
                     YounGGSalt
                 </p>
-                <div class="RoleDiv">
+                <div class="RoleDiv" id="RD6">
                     <p class="Role">
-                    
+                        <i class="fa-regular fa-star"></i>
                     </p>
                 </div>
+                <a class="btn btn-dark btn-lg steamBt" href="https://steamcommunity.com/profiles/76561199216783364/" role="button">
+                    <i class="fa fa-steam" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-warning btn-lg infoBt" href="#" role="button" data-bs-toggle="modal" data-bs-target="#SB6">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </div>
     <div class="NWBody">
+        <form action="https://discord.gg/GaXhnKTanc">
+            <button class="NWBT DiscordBt">
+                <i class="fa-brands fa-discord"></i>
+            </button>
+        </form>
+        <form action="#">
+            <button class="NWBT Bt1">
+
+            </button>
+        </form>
+        <form action="#">
+            <button class="NWBT Bt2">
+
+            </button>
+        </form>
         <div class="underLine">
 
         </div>
     </div>
+    <div id="Hint">
+        <p id="MainText">
+            
+        </p>
+    </div>
 </body>
+<script src="/libs/bootstrap.bundle.min.js">
+</script>
 <script src="script.js">
 </script>
 </html>
